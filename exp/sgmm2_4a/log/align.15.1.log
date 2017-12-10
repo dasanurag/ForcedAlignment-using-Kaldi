@@ -1,0 +1,98 @@
+# sgmm2-align-compiled --spk-vecs=ark:exp/sgmm2_4a/vecs.1 --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 "--gselect=ark,s,cs:gunzip -c exp/sgmm2_4a/gselect.1.gz|" --utt2spk=ark:data/train/split2/1/utt2spk --beam=8 --retry-beam=40 exp/sgmm2_4a/15.mdl "ark:gunzip -c exp/sgmm2_4a/fsts.1.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/1/utt2spk scp:data/train/split2/1/cmvn.scp scp:data/train/split2/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3b_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split2/1/utt2spk ark,s,cs:exp/tri3b_ali/trans.1 ark:- ark:- |" "ark:|gzip -c >exp/sgmm2_4a/ali.1.gz" 
+# Started at Sun Nov 26 10:20:36 IST 2017
+#
+sgmm2-align-compiled --spk-vecs=ark:exp/sgmm2_4a/vecs.1 --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 '--gselect=ark,s,cs:gunzip -c exp/sgmm2_4a/gselect.1.gz|' --utt2spk=ark:data/train/split2/1/utt2spk --beam=8 --retry-beam=40 exp/sgmm2_4a/15.mdl 'ark:gunzip -c exp/sgmm2_4a/fsts.1.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/1/utt2spk scp:data/train/split2/1/cmvn.scp scp:data/train/split2/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3b_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split2/1/utt2spk ark,s,cs:exp/tri3b_ali/trans.1 ark:- ark:- |' 'ark:|gzip -c >exp/sgmm2_4a/ali.1.gz' 
+apply-cmvn --utt2spk=ark:data/train/split2/1/utt2spk scp:data/train/split2/1/cmvn.scp scp:data/train/split2/1/feats.scp ark:- 
+splice-feats ark:- ark:- 
+transform-feats --utt2spk=ark:data/train/split2/1/utt2spk ark,s,cs:exp/tri3b_ali/trans.1 ark:- ark:- 
+transform-feats exp/tri3b_ali/final.mat ark:- ark:- 
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Bahoke-20130721-jpg-b0095 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Bahoke-20130721-unp-a0538 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Catbells-20110825-jlz-b0513 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Coren-20141121-ugy-b0283 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance CptOatmeal-20080721-vnh-a0426 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file CptOatmeal-20080721-vnh-a0426, len = 186
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance DavidL-20091117-duk-a0069 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance DavidL-20091117-goj-ar-02 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance JRB-20080602-keb-a0462 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Jeremy-20120107-qtq-a0457 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance JimWhite-20100807-dua-a0223 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Joel-20080716-qoz-b0074 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file Joel-20080716-qoz-b0074, len = 761
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Joel-20080716-qoz-b0075 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file Joel-20080716-qoz-b0075, len = 823
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Joel-20080716-qoz-b0076 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file Joel-20080716-qoz-b0076, len = 811
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Joel-20080716-qoz-b0077 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file Joel-20080716-qoz-b0077, len = 573
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Joel-20080716-qoz-b0078 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file Joel-20080716-qoz-b0078, len = 673
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Joel-20080716-qoz-b0079 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file Joel-20080716-qoz-b0079, len = 586
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Joel-20080716-qoz-b0080 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file Joel-20080716-qoz-b0080, len = 648
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Joel-20080716-qoz-b0081 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file Joel-20080716-qoz-b0081, len = 648
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Joel-20080716-qoz-b0082 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file Joel-20080716-qoz-b0082, len = 711
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Joel-20080716-qoz-b0083 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file Joel-20080716-qoz-b0083, len = 661
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance KnitGirl-20071113-dil-b0265 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Megan-20160212-whn-e0119 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Megan-20160212-whn-e0121 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance RobSmith-20091103-mog-rp-09 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Saul-20080221-xai-a0006 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file Saul-20080221-xai-a0006, len = 436
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Shane-20080603-yfs-a0048 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Shane-20080606-fbp-a0212 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance Shishir-20091211-dom-b0427 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file Shishir-20091211-dom-b0427, len = 748
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance TechnoZeus-20090805-ucc-b0126 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance alienation-20120207-min-b0231 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0038-20080413-dto-a0234 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file anonymous0038-20080413-dto-a0234, len = 587
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0043-20080426-gcs-b0099 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0070-20080611-jsf-b0368 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0092-20080709-vaq-a0461 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file anonymous0092-20080709-vaq-a0461, len = 411
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0116-20080927-shd-b0317 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0125-20081015-rdx-b0075 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0134-20081026-ewe-rp-03 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0141-20081027-yle-rb-24 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0146-20081108-mph-a0227 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file anonymous0146-20081108-mph-a0227, len = 356
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0151-20081111-bnf-a0026 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file anonymous0151-20081111-bnf-a0026, len = 280
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0156-20081116-xvn-a0006 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0165-20081209-vqq-b0228 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file anonymous0165-20081209-vqq-b0228, len = 86
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0168-20081212-tss-a0393 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file anonymous0168-20081212-tss-a0393, len = 311
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0170-20081221-htm-rp-17 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0191-20090121-ncp-a0564 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file anonymous0191-20090121-ncp-a0564, len = 12
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0215-20090623-jhj-a0286 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file anonymous0215-20090623-jhj-a0286, len = 442
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0230-20090720-lcc-a0383 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file anonymous0230-20090720-lcc-a0383, len = 473
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0247-20090901-fvw-rb-14 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file anonymous0247-20090901-fvw-rb-14, len = 736
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0253-20090901-yfo-b0506 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file anonymous0253-20090901-yfo-b0506, len = 498
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0256-20090902-hct-b0444 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0257-20090902-pfo-b0282 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file anonymous0257-20090902-pfo-b0282, len = 423
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0285-20090919-xjn-b0346 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file anonymous0285-20090919-xjn-b0346, len = 398
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance anonymous0303-20091102-lwb-b0445 with beam 40
+WARNING (sgmm2-align-compiled:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file anonymous0303-20091102-lwb-b0445, len = 573
+LOG (apply-cmvn:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 10012 utterances, errors on 0
+LOG (transform-feats:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -95.361 over 4.92722e+06 frames.
+LOG (transform-feats:main():transform-feats.cc:161) Applied transform to 10012 utterances; 0 had errors.
+LOG (transform-feats:main():transform-feats.cc:158) Overall average logdet is 2.89995 over 4.92722e+06 frames.
+LOG (transform-feats:main():transform-feats.cc:161) Applied transform to 10012 utterances; 0 had errors.
+LOG (sgmm2-align-compiled:main():sgmm2-align-compiled.cc:168) Overall log-likelihood per frame is -38.1694 over 4913364 frames.
+LOG (sgmm2-align-compiled:main():sgmm2-align-compiled.cc:170) Retried 53 out of 10012 utterances.
+LOG (sgmm2-align-compiled:main():sgmm2-align-compiled.cc:172) Done 9985, errors on 27
+# Accounting: time=1192 threads=1
+# Ended (code 0) at Sun Nov 26 10:40:28 IST 2017, elapsed time 1192 seconds

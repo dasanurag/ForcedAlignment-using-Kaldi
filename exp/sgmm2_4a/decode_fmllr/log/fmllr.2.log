@@ -1,0 +1,159 @@
+# gunzip -c exp/sgmm2_4a/decode_fmllr/pre_lat.2.gz | sgmm2-rescore-lattice --speedup=true --spk-vecs=ark:exp/sgmm2_4a/decode_fmllr/vecs.2 --utt2spk=ark:data/test/split2/2/utt2spk "--gselect=ark,s,cs:gunzip -c exp/sgmm2_4a/decode_fmllr/gselect.2.gz|" exp/sgmm2_4a/final.mdl ark:- "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split2/2/utt2spk scp:data/test/split2/2/cmvn.scp scp:data/test/split2/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split2/2/utt2spk ark,s,cs:exp/tri3b/decode/trans.2 ark:- ark:- |" ark:- | lattice-prune --acoustic-scale=0.1 --beam=4.0 ark:- ark:- | lattice-determinize-pruned --acoustic-scale=0.1 --beam=4.0 ark:- ark:- | lattice-to-post --acoustic-scale=0.1 ark:- ark:- | weight-silence-post 0.0 1:2:3:4:5 exp/sgmm2_4a/final.mdl ark:- ark:- | sgmm2-est-fmllr --spk2utt=ark:data/test/split2/2/spk2utt "--gselect=ark,s,cs:gunzip -c exp/sgmm2_4a/decode_fmllr/gselect.2.gz|" --spk-vecs=ark:exp/sgmm2_4a/decode_fmllr/vecs.2 --fmllr-iters=10 --fmllr-min-count=1000 exp/sgmm2_4a/final.fmllr_mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split2/2/utt2spk scp:data/test/split2/2/cmvn.scp scp:data/test/split2/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split2/2/utt2spk ark,s,cs:exp/tri3b/decode/trans.2 ark:- ark:- |" ark,s,cs:- ark:exp/sgmm2_4a/decode_fmllr/trans.2 
+# Started at Sun Nov 26 12:59:52 IST 2017
+#
+weight-silence-post 0.0 1:2:3:4:5 exp/sgmm2_4a/final.mdl ark:- ark:- 
+lattice-determinize-pruned --acoustic-scale=0.1 --beam=4.0 ark:- ark:- 
+lattice-prune --acoustic-scale=0.1 --beam=4.0 ark:- ark:- 
+sgmm2-rescore-lattice --speedup=true --spk-vecs=ark:exp/sgmm2_4a/decode_fmllr/vecs.2 --utt2spk=ark:data/test/split2/2/utt2spk '--gselect=ark,s,cs:gunzip -c exp/sgmm2_4a/decode_fmllr/gselect.2.gz|' exp/sgmm2_4a/final.mdl ark:- 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split2/2/utt2spk scp:data/test/split2/2/cmvn.scp scp:data/test/split2/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split2/2/utt2spk ark,s,cs:exp/tri3b/decode/trans.2 ark:- ark:- |' ark:- 
+lattice-to-post --acoustic-scale=0.1 ark:- ark:- 
+sgmm2-est-fmllr --spk2utt=ark:data/test/split2/2/spk2utt '--gselect=ark,s,cs:gunzip -c exp/sgmm2_4a/decode_fmllr/gselect.2.gz|' --spk-vecs=ark:exp/sgmm2_4a/decode_fmllr/vecs.2 --fmllr-iters=10 --fmllr-min-count=1000 exp/sgmm2_4a/final.fmllr_mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split2/2/utt2spk scp:data/test/split2/2/cmvn.scp scp:data/test/split2/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split2/2/utt2spk ark,s,cs:exp/tri3b/decode/trans.2 ark:- ark:- |' ark,s,cs:- ark:exp/sgmm2_4a/decode_fmllr/trans.2 
+apply-cmvn --utt2spk=ark:data/test/split2/2/utt2spk scp:data/test/split2/2/cmvn.scp scp:data/test/split2/2/feats.scp ark:- 
+transform-feats exp/sgmm2_4a/final.mat ark:- ark:- 
+transform-feats --utt2spk=ark:data/test/split2/2/utt2spk ark,s,cs:exp/tri3b/decode/trans.2 ark:- ark:- 
+splice-feats ark:- ark:- 
+transform-feats --utt2spk=ark:data/test/split2/2/utt2spk ark,s,cs:exp/tri3b/decode/trans.2 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split2/2/utt2spk scp:data/test/split2/2/cmvn.scp scp:data/test/split2/2/feats.scp ark:- 
+transform-feats exp/sgmm2_4a/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0371-20100203-ssd-a0541, pruned #states from 4030 to 2747 and #arcs from 7572 to 4157
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0371-20100203-ssd-a0542, pruned #states from 4447 to 3356 and #arcs from 8409 to 5384
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0371-20100203-ssd-a0543, pruned #states from 4572 to 3258 and #arcs from 8744 to 5506
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0371-20100203-ssd-a0544, pruned #states from 4833 to 2798 and #arcs from 9099 to 4332
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0371-20100203-ssd-a0545, pruned #states from 3660 to 2697 and #arcs from 6825 to 4259
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0371-20100203-ssd-a0546, pruned #states from 5160 to 3203 and #arcs from 9683 to 5184
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0371-20100203-ssd-a0547, pruned #states from 5333 to 3025 and #arcs from 10069 to 4876
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0371-20100203-ssd-a0548, pruned #states from 4217 to 3062 and #arcs from 7922 to 4786
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0371-20100203-ssd-a0549, pruned #states from 4452 to 2847 and #arcs from 8215 to 4401
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0371-20100203-ssd-a0550, pruned #states from 4150 to 2689 and #arcs from 7677 to 4268
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0434-20100505-bxv-b0080, pruned #states from 5850 to 4013 and #arcs from 10837 to 6023
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0434-20100505-bxv-b0081, pruned #states from 6624 to 4267 and #arcs from 12326 to 6436
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0434-20100505-bxv-b0082, pruned #states from 5546 to 4017 and #arcs from 10349 to 6267
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0434-20100505-bxv-b0083, pruned #states from 6246 to 4341 and #arcs from 11665 to 6626
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0434-20100505-bxv-b0084, pruned #states from 6446 to 3847 and #arcs from 11936 to 5821
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0434-20100505-bxv-b0085, pruned #states from 4728 to 3617 and #arcs from 8827 to 5604
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0434-20100505-bxv-b0086, pruned #states from 5113 to 3904 and #arcs from 9518 to 5959
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0434-20100505-bxv-b0087, pruned #states from 4815 to 3483 and #arcs from 8947 to 5358
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0434-20100505-bxv-b0088, pruned #states from 3866 to 3016 and #arcs from 7308 to 4650
+LOG (sgmm2-est-fmllr:Update():fmllr-sgmm2.cc:490) Auxiliary function improvement for FMLLR = 0.355327 per frame over 2957 frames. Log-determinant = -0.021378
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0434-20100505-bxv-b0089, pruned #states from 4180 to 3042 and #arcs from 7755 to 4717
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0541-20100821-gbt-b0459, pruned #states from 2051 to 1532 and #arcs from 3743 to 2426
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0541-20100821-gbt-b0460, pruned #states from 4778 to 3189 and #arcs from 9063 to 5130
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0541-20100821-gbt-b0461, pruned #states from 4533 to 3544 and #arcs from 8494 to 5400
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0541-20100821-gbt-b0462, pruned #states from 3622 to 2778 and #arcs from 6787 to 4281
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0541-20100821-gbt-b0463, pruned #states from 3974 to 2680 and #arcs from 7213 to 3891
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0541-20100821-gbt-b0464, pruned #states from 4233 to 3277 and #arcs from 7792 to 4736
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0541-20100821-gbt-b0465, pruned #states from 5470 to 4219 and #arcs from 10245 to 6637
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0541-20100821-gbt-b0466, pruned #states from 7750 to 5254 and #arcs from 14014 to 7363
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0541-20100821-gbt-b0467, pruned #states from 3013 to 2287 and #arcs from 5629 to 3494
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0541-20100821-gbt-b0468, pruned #states from 4864 to 2873 and #arcs from 9152 to 4456
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0615-20110112-ahi-b0036, pruned #states from 4136 to 2595 and #arcs from 7735 to 4347
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0615-20110112-ahi-b0037, pruned #states from 4322 to 2694 and #arcs from 7902 to 4458
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0615-20110112-ahi-b0038, pruned #states from 5241 to 2757 and #arcs from 9589 to 4540
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0615-20110112-ahi-b0039, pruned #states from 4267 to 2708 and #arcs from 8072 to 4605
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0615-20110112-ahi-b0040, pruned #states from 3331 to 2026 and #arcs from 6126 to 3375
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0615-20110112-ahi-b0041, pruned #states from 3444 to 2036 and #arcs from 6192 to 3371
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0615-20110112-ahi-b0042, pruned #states from 4254 to 2432 and #arcs from 7823 to 4027
+LOG (sgmm2-est-fmllr:Update():fmllr-sgmm2.cc:490) Auxiliary function improvement for FMLLR = 0.363894 per frame over 2488.12 frames. Log-determinant = -0.251316
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0615-20110112-ahi-b0043, pruned #states from 5866 to 2055 and #arcs from 10506 to 3346
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0615-20110112-ahi-b0044, pruned #states from 4118 to 2601 and #arcs from 7648 to 4218
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0615-20110112-ahi-b0045, pruned #states from 3513 to 2207 and #arcs from 6550 to 3725
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0762-20111028-uvj-b0002, pruned #states from 7474 to 5082 and #arcs from 13702 to 7537
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0762-20111028-uvj-b0003, pruned #states from 6124 to 4143 and #arcs from 11301 to 5998
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0762-20111028-uvj-b0004, pruned #states from 6959 to 4390 and #arcs from 12998 to 6419
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0762-20111028-uvj-b0005, pruned #states from 6596 to 4066 and #arcs from 12249 to 5804
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0762-20111028-uvj-b0006, pruned #states from 5963 to 4262 and #arcs from 10932 to 6184
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0762-20111028-uvj-b0007, pruned #states from 5741 to 3976 and #arcs from 10457 to 5805
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0762-20111028-uvj-b0008, pruned #states from 5640 to 3493 and #arcs from 10379 to 5182
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0762-20111028-uvj-b0009, pruned #states from 4953 to 3707 and #arcs from 9263 to 5466
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0762-20111028-uvj-b0010, pruned #states from 6310 to 4349 and #arcs from 11661 to 6367
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0762-20111028-uvj-b0011, pruned #states from 7530 to 4588 and #arcs from 13955 to 6758
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0890-20120430-tej-b0051, pruned #states from 6634 to 4712 and #arcs from 12669 to 7607
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0890-20120430-tej-b0052, pruned #states from 4301 to 3198 and #arcs from 8132 to 5225
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0890-20120430-tej-b0053, pruned #states from 7195 to 5522 and #arcs from 13776 to 9016
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0890-20120430-tej-b0054, pruned #states from 6611 to 4840 and #arcs from 12629 to 7729
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0890-20120430-tej-b0055, pruned #states from 7787 to 6158 and #arcs from 15231 to 10655
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0890-20120430-tej-b0056, pruned #states from 6658 to 4553 and #arcs from 12807 to 7387
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0890-20120430-tej-b0057, pruned #states from 5444 to 4382 and #arcs from 10304 to 7210
+LOG (sgmm2-est-fmllr:Update():fmllr-sgmm2.cc:490) Auxiliary function improvement for FMLLR = 0.360058 per frame over 2604.46 frames. Log-determinant = -0.0266599
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0890-20120430-tej-b0058, pruned #states from 4326 to 2918 and #arcs from 8155 to 4588
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0890-20120430-tej-b0059, pruned #states from 4913 to 3578 and #arcs from 9328 to 5716
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0890-20120430-tej-b0060, pruned #states from 7000 to 5117 and #arcs from 13273 to 8110
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0913-20120609-kgq-a0168, pruned #states from 9854 to 6042 and #arcs from 18364 to 9733
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0913-20120609-kgq-a0169, pruned #states from 6685 to 4560 and #arcs from 12412 to 7229
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0913-20120609-kgq-a0170, pruned #states from 6207 to 4662 and #arcs from 11543 to 7294
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0913-20120609-kgq-a0171, pruned #states from 7515 to 4873 and #arcs from 14030 to 7551
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0913-20120609-kgq-a0172, pruned #states from 3079 to 2188 and #arcs from 5633 to 3513
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0913-20120609-kgq-a0173, pruned #states from 4889 to 3093 and #arcs from 9153 to 4928
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0913-20120609-kgq-a0174, pruned #states from 4511 to 3063 and #arcs from 8381 to 4878
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0913-20120609-kgq-a0175, pruned #states from 4665 to 3300 and #arcs from 8634 to 5384
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0913-20120609-kgq-a0176, pruned #states from 3786 to 2881 and #arcs from 7089 to 4693
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0913-20120609-kgq-a0177, pruned #states from 5488 to 4032 and #arcs from 9929 to 6431
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0989-20121113-jbs-a0361, pruned #states from 5886 to 4369 and #arcs from 10724 to 6708
+LOG (sgmm2-est-fmllr:Update():fmllr-sgmm2.cc:490) Auxiliary function improvement for FMLLR = 0.529616 per frame over 2532 frames. Log-determinant = -0.148025
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0989-20121113-jbs-a0362, pruned #states from 4546 to 3340 and #arcs from 8353 to 5142
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0989-20121113-jbs-a0363, pruned #states from 5357 to 3935 and #arcs from 9826 to 6125
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0989-20121113-jbs-a0364, pruned #states from 6463 to 4919 and #arcs from 11954 to 7626
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0989-20121113-jbs-a0365, pruned #states from 4946 to 3986 and #arcs from 8953 to 6044
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0989-20121113-jbs-a0366, pruned #states from 13991 to 8840 and #arcs from 25051 to 13195
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0989-20121113-jbs-a0367, pruned #states from 7150 to 5395 and #arcs from 12994 to 8254
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0989-20121113-jbs-a0368, pruned #states from 13954 to 6060 and #arcs from 24874 to 9102
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0989-20121113-jbs-a0369, pruned #states from 7125 to 5476 and #arcs from 13133 to 8401
+LOG (sgmm2-est-fmllr:Update():fmllr-sgmm2.cc:490) Auxiliary function improvement for FMLLR = 0.271446 per frame over 3354 frames. Log-determinant = 0.0416695
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous0989-20121113-jbs-a0370, pruned #states from 6909 to 5485 and #arcs from 12741 to 8522
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1023-20130123-jta-b0013, pruned #states from 6708 to 4419 and #arcs from 12617 to 6799
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1023-20130123-jta-b0014, pruned #states from 4946 to 3800 and #arcs from 9295 to 6068
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1023-20130123-jta-b0015, pruned #states from 4642 to 3226 and #arcs from 8571 to 4930
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1023-20130123-jta-b0016, pruned #states from 5072 to 3649 and #arcs from 9615 to 5750
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1023-20130123-jta-b0017, pruned #states from 3791 to 3074 and #arcs from 7090 to 4869
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1023-20130123-jta-b0018, pruned #states from 4192 to 2915 and #arcs from 7771 to 4468
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1023-20130123-jta-b0019, pruned #states from 3398 to 2693 and #arcs from 6427 to 4364
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1023-20130123-jta-b0020, pruned #states from 5913 to 2532 and #arcs from 11131 to 4023
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1023-20130123-jta-b0021, pruned #states from 4274 to 2060 and #arcs from 7917 to 3171
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1023-20130123-jta-b0022, pruned #states from 6556 to 2784 and #arcs from 12518 to 4374
+LOG (sgmm2-est-fmllr:Update():fmllr-sgmm2.cc:490) Auxiliary function improvement for FMLLR = 0.313027 per frame over 2752.98 frames. Log-determinant = -0.0947135
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1116-20131221-urh-a0038, pruned #states from 3076 to 2182 and #arcs from 5628 to 3308
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1116-20131221-urh-a0039, pruned #states from 7860 to 3720 and #arcs from 14369 to 5590
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1116-20131221-urh-a0040, pruned #states from 6770 to 4480 and #arcs from 12288 to 7020
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1116-20131221-urh-a0041, pruned #states from 3833 to 2416 and #arcs from 6986 to 3696
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1116-20131221-urh-a0042, pruned #states from 5572 to 3875 and #arcs from 10442 to 6015
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1116-20131221-urh-a0043, pruned #states from 5903 to 3378 and #arcs from 10756 to 5282
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1116-20131221-urh-a0044, pruned #states from 7355 to 4572 and #arcs from 13668 to 7044
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1116-20131221-urh-a0045, pruned #states from 5135 to 4098 and #arcs from 9871 to 6590
+LOG (sgmm2-est-fmllr:Update():fmllr-sgmm2.cc:490) Auxiliary function improvement for FMLLR = 0.395483 per frame over 2654.27 frames. Log-determinant = -0.143962
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1116-20131221-urh-a0046, pruned #states from 5834 to 4168 and #arcs from 10905 to 6514
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1116-20131221-urh-a0047, pruned #states from 8865 to 4771 and #arcs from 16331 to 7125
+LOG (apply-cmvn:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 110 utterances, errors on 0
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1184-20150109-mlr-b0174, pruned #states from 8205 to 5536 and #arcs from 15415 to 9155
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1184-20150109-mlr-b0175, pruned #states from 4525 to 3381 and #arcs from 8552 to 5215
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1184-20150109-mlr-b0176, pruned #states from 7529 to 5559 and #arcs from 14407 to 9491
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1184-20150109-mlr-b0177, pruned #states from 9152 to 5433 and #arcs from 17236 to 8826
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1184-20150109-mlr-b0178, pruned #states from 1780 to 1334 and #arcs from 3271 to 2199
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1184-20150109-mlr-b0179, pruned #states from 12317 to 6388 and #arcs from 23478 to 10346
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1184-20150109-mlr-b0180, pruned #states from 5221 to 3432 and #arcs from 9930 to 5475
+LOG (transform-feats:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -95.361 over 55190 frames.
+LOG (transform-feats:main():transform-feats.cc:161) Applied transform to 110 utterances; 0 had errors.
+LOG (sgmm2-est-fmllr:Update():fmllr-sgmm2.cc:490) Auxiliary function improvement for FMLLR = 0.370711 per frame over 3257.85 frames. Log-determinant = -0.142416
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1184-20150109-mlr-b0181, pruned #states from 6499 to 3349 and #arcs from 12196 to 5253
+LOG (transform-feats:main():transform-feats.cc:158) Overall average logdet is 4.37357 over 55190 frames.
+LOG (transform-feats:main():transform-feats.cc:161) Applied transform to 110 utterances; 0 had errors.
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1184-20150109-mlr-b0182, pruned #states from 6945 to 5248 and #arcs from 13604 to 8594
+LOG (sgmm2-rescore-lattice:main():sgmm2-rescore-lattice.cc:159) Done 110 lattices, errors on 0
+LOG (lattice-prune:main():lattice-prune.cc:95) For utterance anonymous1184-20150109-mlr-b0183, pruned #states from 6724 to 2542 and #arcs from 13018 to 4067
+LOG (lattice-prune:main():lattice-prune.cc:104) Overall, pruned from on average 5643.68 to 3741.09 states, and from 10511.2 to 5850.7 arcs, over 110 utterances.
+LOG (lattice-prune:main():lattice-prune.cc:108) Done 110 lattices.
+LOG (lattice-determinize-pruned:main():lattice-determinize-pruned.cc:111) Done 110 lattices, determinization finished earlier than specified by the beam on 0 of these.
+LOG (sgmm2-est-fmllr:Update():fmllr-sgmm2.cc:490) Auxiliary function improvement for FMLLR = 0.371132 per frame over 2437 frames. Log-determinant = -0.590742
+LOG (lattice-to-post:main():lattice-to-post.cc:106) Overall average log-like/frame is -3.96565 over 55190 frames.  Average acoustic like/frame is -3.83723
+LOG (lattice-to-post:main():lattice-to-post.cc:110) Done 110 lattices.
+LOG (sgmm2-est-fmllr:Update():fmllr-sgmm2.cc:490) Auxiliary function improvement for FMLLR = 0.361398 per frame over 3077.25 frames. Log-determinant = -0.168368
+LOG (apply-cmvn:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 110 utterances, errors on 0
+LOG (weight-silence-post:main():weight-silence-post.cc:95) Done 110 posteriors.
+LOG (transform-feats:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -95.361 over 55190 frames.
+LOG (transform-feats:main():transform-feats.cc:161) Applied transform to 110 utterances; 0 had errors.
+LOG (transform-feats:main():transform-feats.cc:158) Overall average logdet is 4.37357 over 55190 frames.
+LOG (transform-feats:main():transform-feats.cc:161) Applied transform to 110 utterances; 0 had errors.
+LOG (sgmm2-est-fmllr:Update():fmllr-sgmm2.cc:490) Auxiliary function improvement for FMLLR = 0.403835 per frame over 2357.45 frames. Log-determinant = -0.210218
+LOG (sgmm2-est-fmllr:main():sgmm2-est-fmllr.cc:293) Done 110 files, 0 with errors.
+LOG (sgmm2-est-fmllr:main():sgmm2-est-fmllr.cc:294) Overall auxf impr per frame is 0.368631 per frame, over 30472.4 frames.
+# Accounting: time=38 threads=1
+# Ended (code 0) at Sun Nov 26 13:00:30 IST 2017, elapsed time 38 seconds

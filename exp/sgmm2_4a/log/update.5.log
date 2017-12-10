@@ -1,0 +1,150 @@
+# sgmm2-est --update-flags=vNwSctu --split-substates=11665 --power=0.25 --write-occs=exp/sgmm2_4a/6.occs exp/sgmm2_4a/5.mdl "sgmm2-sum-accs - exp/sgmm2_4a/5.*.acc|" exp/sgmm2_4a/6.mdl 
+# Started at Sun Nov 26 08:25:30 IST 2017
+#
+sgmm2-est --update-flags=vNwSctu --split-substates=11665 --power=0.25 --write-occs=exp/sgmm2_4a/6.occs exp/sgmm2_4a/5.mdl 'sgmm2-sum-accs - exp/sgmm2_4a/5.*.acc|' exp/sgmm2_4a/6.mdl 
+sgmm2-sum-accs - exp/sgmm2_4a/5.1.acc exp/sgmm2_4a/5.2.acc 
+LOG (sgmm2-sum-accs:main():sgmm2-sum-accs.cc:84) Written stats to -
+LOG (sgmm2-est:MleUpdate():transition-model.cc:393) TransitionModel::Update, objf change is 0.00108197 per frame over 1.02499e+07 frames. 
+LOG (sgmm2-est:MleUpdate():transition-model.cc:396) 114 probabilities floored, 13373 out of 23448 transition-states skipped due to insuffient data (it is normal to have some skipped.)
+LOG (sgmm2-est:main():sgmm2-est.cc:109) Transition model update: Overall 0.00108197 log-like improvement per frame over 1.02499e+07 frames.
+LOG (sgmm2-est:Check():estimate-am-sgmm2.cc:216) Sgmm2PdfModel: J1 = 1600, J2 = 6727, D = 40, S = 41, T = 40, I = 400
+LOG (sgmm2-est:Check():estimate-am-sgmm2.cc:362) Subspace GMM model properties: Y: yes, nonzero. Z: yes, nonzero. R: yes, nonzero. gamma_s: yes, zero. S: yes, nonzero. y: yes, nonzero. a: yes.  a: yes, nonzero. gamma: yes.  gamma: yes, nonzero. gamma_c: yes, nonzero. t: yes, nonzero. t: yes, nonzero. 
+LOG (sgmm2-est:UpdatePhoneVectors():estimate-am-sgmm2.cc:782) Updating phone vectors
+LOG (sgmm2-est:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:928) Auxf impr for j = 0 m = 0 is 0.00451994 per frame over 18574 frames.
+LOG (sgmm2-est:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:928) Auxf impr for j = 0 m = 1 is 0.00368881 per frame over 19310.9 frames.
+LOG (sgmm2-est:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:928) Auxf impr for j = 0 m = 2 is 0.00498885 per frame over 36936.8 frames.
+LOG (sgmm2-est:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:928) Auxf impr for j = 1 m = 0 is 0.0729791 per frame over 473.77 frames.
+LOG (sgmm2-est:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:928) Auxf impr for j = 1 m = 1 is 0.0848574 per frame over 162.85 frames.
+LOG (sgmm2-est:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:928) Auxf impr for j = 1 m = 2 is 0.100248 per frame over 313.206 frames.
+LOG (sgmm2-est:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:928) Auxf impr for j = 2 m = 0 is 0.0316577 per frame over 512.192 frames.
+LOG (sgmm2-est:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:928) Auxf impr for j = 2 m = 1 is 0.055151 per frame over 411.352 frames.
+LOG (sgmm2-est:UpdatePhoneVectorsInternal():estimate-am-sgmm2.cc:928) Auxf impr for j = 2 m = 2 is 0.0308881 per frame over 270.597 frames.
+LOG (sgmm2-est:UpdatePhoneVectors():estimate-am-sgmm2.cc:794) **Overall auxf impr for v is 0.0368062 over 1.02493e+07 frames
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1319) Updating weight projections
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 0, i = 0 is 0.00236187 per frame over 61479.7 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 0, i = 1 is 0.0132172 per frame over 12393.3 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 0, i = 2 is 0.004153 per frame over 82390.8 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 0, i = 3 is 0.00405463 per frame over 71086.3 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 0, i = 4 is 0.0159161 per frame over 31514.8 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 0, i = 5 is 0.00561055 per frame over 38685.8 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 0, i = 6 is 0.00291626 per frame over 73393.2 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 0, i = 7 is 0.00251056 per frame over 29674.3 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 0, i = 8 is 0.00827916 per frame over 24976.6 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 0, i = 9 is 0.00380254 per frame over 56925.6 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 1, i = 0 is 0.00012746 per frame over 61479.7 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 1, i = 1 is 0.000296919 per frame over 12393.3 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 1, i = 2 is 2.99957e-05 per frame over 82390.8 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 1, i = 3 is 0.000173883 per frame over 71086.3 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 1, i = 4 is 0.00196179 per frame over 31514.8 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 1, i = 5 is 0.000183596 per frame over 38685.8 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 1, i = 6 is 4.78386e-05 per frame over 73393.2 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 1, i = 7 is 6.06884e-05 per frame over 29674.3 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 1, i = 8 is 0.000612919 per frame over 24976.6 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 1, i = 9 is 0.000157713 per frame over 56925.6 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 2, i = 0 is 1.44403e-05 per frame over 61479.7 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 2, i = 1 is 3.37017e-05 per frame over 12393.3 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 2, i = 2 is 8.54463e-06 per frame over 82390.8 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 2, i = 3 is 4.05186e-05 per frame over 71086.3 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 2, i = 4 is 0.000782303 per frame over 31514.8 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 2, i = 5 is 3.81991e-05 per frame over 38685.8 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 2, i = 6 is 1.62466e-05 per frame over 73393.2 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 2, i = 7 is 1.02298e-05 per frame over 29674.3 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 2, i = 8 is 5.11596e-05 per frame over 24976.6 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1373) Predicted objf impr for w, iter = 2, i = 9 is 1.79105e-05 per frame over 56925.6 frames.
+LOG (sgmm2-est:UpdateW():estimate-am-sgmm2.cc:1427) **Overall objf impr for w is 0.00377328, actual 0.00482715, over 1.02493e+07 frames
+WARNING (sgmm2-est:UpdateVars():estimate-am-sgmm2.cc:1643) For Gaussian component 11: Floored 1 covariance eigenvalues.
+WARNING (sgmm2-est:UpdateVars():estimate-am-sgmm2.cc:1643) For Gaussian component 13: Floored 3 covariance eigenvalues.
+WARNING (sgmm2-est:UpdateVars():estimate-am-sgmm2.cc:1643) For Gaussian component 40: Floored 2 covariance eigenvalues.
+WARNING (sgmm2-est:UpdateVars():estimate-am-sgmm2.cc:1643) For Gaussian component 43: Floored 2 covariance eigenvalues.
+WARNING (sgmm2-est:UpdateVars():estimate-am-sgmm2.cc:1643) For Gaussian component 45: Floored 2 covariance eigenvalues.
+WARNING (sgmm2-est:UpdateVars():estimate-am-sgmm2.cc:1643) For Gaussian component 68: Floored 1 covariance eigenvalues.
+WARNING (sgmm2-est:UpdateVars():estimate-am-sgmm2.cc:1643) For Gaussian component 73: Floored 3 covariance eigenvalues.
+WARNING (sgmm2-est:UpdateVars():estimate-am-sgmm2.cc:1643) For Gaussian component 76: Floored 1 covariance eigenvalues.
+WARNING (sgmm2-est:UpdateVars():estimate-am-sgmm2.cc:1643) For Gaussian component 79: Floored 2 covariance eigenvalues.
+WARNING (sgmm2-est:UpdateVars():estimate-am-sgmm2.cc:1643) For Gaussian component 80: Floored 2 covariance eigenvalues.
+LOG (sgmm2-est:UpdateVars():estimate-am-sgmm2.cc:1669) **Overall objf impr for variance update = 0.0536545 over 1.02493e+07 frames
+LOG (sgmm2-est:UpdateSubstateWeights():estimate-am-sgmm2.cc:1678) Updating substate mixture weights
+LOG (sgmm2-est:UpdateSubstateWeights():estimate-am-sgmm2.cc:1701) **Overall objf impr for c is 0.0034115, over 1.02493e+07 frames.
+LOG (sgmm2-est:UpdateN():estimate-am-sgmm2.cc:1506) Objf impr for spk projection N for i = 0, is 0.39638 over 61479.7 frames
+LOG (sgmm2-est:UpdateN():estimate-am-sgmm2.cc:1506) Objf impr for spk projection N for i = 1, is 2.43638 over 12393.3 frames
+LOG (sgmm2-est:UpdateN():estimate-am-sgmm2.cc:1506) Objf impr for spk projection N for i = 2, is 0.495316 over 82390.8 frames
+LOG (sgmm2-est:UpdateN():estimate-am-sgmm2.cc:1506) Objf impr for spk projection N for i = 3, is 0.452605 over 71086.3 frames
+LOG (sgmm2-est:UpdateN():estimate-am-sgmm2.cc:1506) Objf impr for spk projection N for i = 4, is 0.87713 over 31514.8 frames
+LOG (sgmm2-est:UpdateN():estimate-am-sgmm2.cc:1506) Objf impr for spk projection N for i = 5, is 0.250345 over 38685.8 frames
+LOG (sgmm2-est:UpdateN():estimate-am-sgmm2.cc:1506) Objf impr for spk projection N for i = 6, is 0.329927 over 73393.2 frames
+LOG (sgmm2-est:UpdateN():estimate-am-sgmm2.cc:1506) Objf impr for spk projection N for i = 7, is 1.48887 over 29674.3 frames
+LOG (sgmm2-est:UpdateN():estimate-am-sgmm2.cc:1506) Objf impr for spk projection N for i = 8, is 1.06963 over 24976.6 frames
+LOG (sgmm2-est:UpdateN():estimate-am-sgmm2.cc:1506) Objf impr for spk projection N for i = 9, is 0.520727 over 56925.6 frames
+LOG (sgmm2-est:SolveQuadraticMatrixProblem():sp-matrix.cc:810) Solving matrix problem for N: floored 22 eigenvalues. 
+LOG (sgmm2-est:SolveQuadraticMatrixProblem():sp-matrix.cc:810) Solving matrix problem for N: floored 35 eigenvalues. 
+LOG (sgmm2-est:SolveQuadraticMatrixProblem():sp-matrix.cc:810) Solving matrix problem for N: floored 3 eigenvalues. 
+LOG (sgmm2-est:SolveQuadraticMatrixProblem():sp-matrix.cc:810) Solving matrix problem for N: floored 10 eigenvalues. 
+LOG (sgmm2-est:SolveQuadraticMatrixProblem():sp-matrix.cc:810) Solving matrix problem for N: floored 8 eigenvalues. 
+LOG (sgmm2-est:SolveQuadraticMatrixProblem():sp-matrix.cc:810) Solving matrix problem for N: floored 32 eigenvalues. 
+LOG (sgmm2-est:SolveQuadraticMatrixProblem():sp-matrix.cc:810) Solving matrix problem for N: floored 3 eigenvalues. 
+LOG (sgmm2-est:SolveQuadraticMatrixProblem():sp-matrix.cc:810) Solving matrix problem for N: floored 13 eigenvalues. 
+LOG (sgmm2-est:UpdateN():estimate-am-sgmm2.cc:1514) **Overall objf impr for N is 0.50589 over 1.02493e+07 frames
+LOG (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1467) Objf impr for spk weight-projection u for i = 0, is 0.0461374 over 61479.7 frames
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 1, impr/frame is 3.46639 over 12393.3 frames, scaling back to not exceed 0.25
+LOG (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1467) Objf impr for spk weight-projection u for i = 1, is 0.25 over 12393.3 frames
+LOG (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1467) Objf impr for spk weight-projection u for i = 2, is 0.110431 over 82390.8 frames
+LOG (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1467) Objf impr for spk weight-projection u for i = 3, is 0.0849011 over 71086.3 frames
+LOG (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1467) Objf impr for spk weight-projection u for i = 4, is 0.189922 over 31514.8 frames
+LOG (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1467) Objf impr for spk weight-projection u for i = 5, is 0.0478165 over 38685.8 frames
+LOG (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1467) Objf impr for spk weight-projection u for i = 6, is 0.0315059 over 73393.2 frames
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 7, impr/frame is 1.06258 over 29674.3 frames, scaling back to not exceed 0.25
+LOG (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1467) Objf impr for spk weight-projection u for i = 7, is 0.25 over 29674.3 frames
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 8, impr/frame is 1.50521 over 24976.6 frames, scaling back to not exceed 0.25
+LOG (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1467) Objf impr for spk weight-projection u for i = 8, is 0.25 over 24976.6 frames
+LOG (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1467) Objf impr for spk weight-projection u for i = 9, is 0.127645 over 56925.6 frames
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 11, impr/frame is 2.2225 over 34083.7 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 12, impr/frame is 0.585885 over 14729 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 13, impr/frame is 3.91368 over 6509.2 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 14, impr/frame is 0.397839 over 29396.6 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 26, impr/frame is 1.87076 over 27189 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 27, impr/frame is 0.964718 over 7720.36 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 28, impr/frame is 3.18955 over 17730.9 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 29, impr/frame is 13.099 over 8264.03 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 30, impr/frame is 1.12677 over 16779.6 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 31, impr/frame is 1.15253 over 31891.3 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 33, impr/frame is 1.31536 over 77632.9 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 34, impr/frame is 1.54061 over 56696 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 35, impr/frame is 2.70312 over 20167.6 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 37, impr/frame is 2.23113 over 16775.6 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 38, impr/frame is 0.545507 over 80743.8 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 40, impr/frame is 1.78897 over 57729.3 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 41, impr/frame is 1.15174 over 36290.2 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 42, impr/frame is 4.77069 over 6263.3 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 43, impr/frame is 3.59022 over 30835.3 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 44, impr/frame is 0.508397 over 34647.8 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 45, impr/frame is 3.0103 over 26957.9 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 58, impr/frame is 0.28006 over 122283 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 63, impr/frame is 1.01081 over 62452.8 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 68, impr/frame is 4.08525 over 10322.4 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 71, impr/frame is 0.403666 over 51381.7 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 73, impr/frame is 3.69313 over 24214.3 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 74, impr/frame is 0.77731 over 36144.6 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 76, impr/frame is 2.48124 over 24350 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 79, impr/frame is 2.65855 over 34338.2 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 80, impr/frame is 2.67095 over 24296.9 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 162, impr/frame is 0.382577 over 19516.8 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 190, impr/frame is 0.270044 over 13086.6 frames, scaling back to not exceed 0.25
+WARNING (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1454) Updating speaker weight projections u, for Gaussian index 386, impr/frame is 0.255402 over 12399.7 frames, scaling back to not exceed 0.25
+LOG (sgmm2-est:UpdateU():estimate-am-sgmm2.cc:1475) **Overall objf impr for u is 0.0699655, over 1.02493e+07 frames
+LOG (sgmm2-est:RenormalizeV():estimate-am-sgmm2.cc:963) Scatter of vectors v is : 
+LOG (sgmm2-est:PrintEigs():matrix/sp-matrix.h:217) PrintEigs: Sigma:  [ 0.900491 0.962942 0.971325 0.972806 0.980807 0.981254 0.98601 0.988742 0.990917 0.995504 0.996318 0.999802 1.00464 1.00541 1.00884 1.01551 1.0158 1.01773 1.02387 1.02706 1.02967 1.03768 1.03464 1.03211 1.04269 1.04853 1.05237 1.05537 1.06237 1.06529 1.07006 1.07703 1.08191 1.08102 1.09211 1.09531 1.10009 1.10851 1.13499 1.13597 1.12495 ]
+LOG (sgmm2-est:RenormalizeV():estimate-am-sgmm2.cc:985) Note on the next diagnostic: the first number is generally not that meaningful as it relates to the static offset
+LOG (sgmm2-est:PrintEigs():matrix/sp-matrix.h:217) PrintEigs: H_sm_proj (Significance of dims in vector space.. note):  [ 31.7031 3.04567 2.65598 2.57556 2.16514 1.77582 1.56272 1.496 1.23728 1.10632 1.07598 0.873936 0.811332 0.702159 0.672327 0.614943 0.584457 0.524309 0.500135 0.491005 0.459363 0.439747 0.411231 0.361595 0.346441 0.340018 0.0921343 0.295924 0.282576 0.122158 0.120094 0.142127 0.259993 0.239224 0.232827 0.159972 0.171276 0.181208 0.208059 0.210192 0.189098 ]
+LOG (sgmm2-est:RenormalizeV():estimate-am-sgmm2.cc:1031) Renormalized subspace.
+LOG (sgmm2-est:Update():estimate-am-sgmm2.cc:673) *Overall auxf improvement, combining all parameters, is 0.674555
+LOG (sgmm2-est:Update():estimate-am-sgmm2.cc:676) ***Overall data likelihood is -39.7015 over 1.02493e+07 frames.
+WARNING (sgmm2-est:ComputeHsmFromModel():am-sgmm2.cc:1282) Limited 15 eigenvalues of H_sm
+LOG (sgmm2-est:ComputeHsmFromModel():am-sgmm2.cc:1287) total count is 1.02492e+07
+LOG (sgmm2-est:SplitSubstates():am-sgmm2.cc:692) Getting rid of normalizers as they will no longer be valid
+LOG (sgmm2-est:SplitSubstates():am-sgmm2.cc:694) Split 11239 substates to 11889
+LOG (sgmm2-est:ComputeNormalizers():am-sgmm2.cc:852) Computing normalizers
+LOG (sgmm2-est:ComputeNormalizers():am-sgmm2.cc:859) Entropy of weights in substates is 2.43612 over 11889 substates, equivalent to perplexity of 11.4286
+LOG (sgmm2-est:ComputeNormalizers():am-sgmm2.cc:863) Done computing normalizers
+LOG (sgmm2-est:main():sgmm2-est.cc:158) Written model to exp/sgmm2_4a/6.mdl
+# Accounting: time=17 threads=1
+# Ended (code 0) at Sun Nov 26 08:25:47 IST 2017, elapsed time 17 seconds

@@ -1,0 +1,22 @@
+# build-tree-two-level --binary=false --verbose=1 --max-leaves-first=1600 --max-leaves-second=8000 exp/sgmm2_4a/treeacc data/lang/phones/roots.int exp/sgmm2_4a/questions.qst data/lang/topo exp/sgmm2_4a/tree exp/sgmm2_4a/pdf2group.map 
+# Started at Sun Nov 26 07:18:29 IST 2017
+#
+build-tree-two-level --binary=false --verbose=1 --max-leaves-first=1600 --max-leaves-second=8000 exp/sgmm2_4a/treeacc data/lang/phones/roots.int exp/sgmm2_4a/questions.qst data/lang/topo exp/sgmm2_4a/tree exp/sgmm2_4a/pdf2group.map 
+Number of separate statistics is 53855
+LOG (build-tree-two-level:BuildTreeTwoLevel():build-tree.cc:325) ****BuildTreeTwoLevel: building first level tree
+LOG (build-tree-two-level:BuildTree():build-tree.cc:159) BuildTree: before building trees, map has 40 leaves.
+LOG (build-tree-two-level:SplitDecisionTree():build-tree-utils.cc:577) DoDecisionTreeSplit: split 1560 times, #leaves now 1600
+VLOG[1] (build-tree-two-level:BuildTree():build-tree.cc:194) After decision tree split, num-leaves = 1600, like-impr = 6.26423 per frame over 1.02413e+07 frames.
+VLOG[1] (build-tree-two-level:BuildTree():build-tree.cc:198) Including just phones that were split, improvement is 6.26423 per frame over 1.02413e+07 frames.
+LOG (build-tree-two-level:BuildTreeTwoLevel():build-tree.cc:331) ****BuildTreeTwoLevel: done building first level tree
+LOG (build-tree-two-level:SplitDecisionTree():build-tree-utils.cc:577) DoDecisionTreeSplit: split 6400 times, #leaves now 8000
+LOG (build-tree-two-level:BuildTreeTwoLevel():build-tree.cc:357) Building second-level tree: increased #leaves from 1600 to 8000, smallest split was 483.996
+LOG (build-tree-two-level:BuildTreeTwoLevel():build-tree.cc:364) After second decision tree split, num-leaves = 8000, like-impr = 0.702462 per frame over 1.02413e+07 frames.
+LOG (build-tree-two-level:BuildTreeTwoLevel():build-tree.cc:369) Clustering leaves of larger tree.
+LOG (build-tree-two-level:BuildTreeTwoLevel():build-tree.cc:379) BuildTreeTwoLevel: removed 1273 leaves.
+LOG (build-tree-two-level:BuildTreeTwoLevel():build-tree.cc:386) Objf change due to clustering -0.0424445 per frame.
+LOG (build-tree-two-level:BuildTreeTwoLevel():build-tree.cc:389) Num-leaves now 6727
+WARNING (build-tree-two-level:main():build-tree-two-level.cc:202) Saw no stats for following phones: 2 3 4 5 13 33 37 41 45 47 49 61 65 67 69 73 81 85 89 93 97 98 101 109 113 117 121 125 129 133 134 135 137 141 145 147 149 151 153 157 161 
+Wrote tree and mapping
+# Accounting: time=25 threads=1
+# Ended (code 0) at Sun Nov 26 07:18:54 IST 2017, elapsed time 25 seconds

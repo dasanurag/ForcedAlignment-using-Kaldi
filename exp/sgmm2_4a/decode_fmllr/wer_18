@@ -1,0 +1,4 @@
+compute-wer --text --mode=present ark:exp/sgmm2_4a/decode_fmllr/scoring/test_filt.txt ark,p:- 
+%WER 6.06 [ 121 / 1997, 17 ins, 36 del, 68 sub ]
+%SER 27.73 [ 61 / 220 ]
+Scored 220 sentences, 0 not present in hyp.

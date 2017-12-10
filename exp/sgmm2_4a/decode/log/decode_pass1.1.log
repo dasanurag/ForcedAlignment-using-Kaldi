@@ -1,0 +1,350 @@
+# sgmm2-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.1 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/sgmm2_4a/graph/words.txt --max-mem=50000000 "--gselect=ark,s,cs:gunzip -c exp/sgmm2_4a/decode/gselect.1.gz| copy-gselect --n=3 ark:- ark:- |" exp/sgmm2_4a/final.alimdl exp/sgmm2_4a/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split2/1/utt2spk scp:data/test/split2/1/cmvn.scp scp:data/test/split2/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split2/1/utt2spk ark,s,cs:exp/tri3b/decode/trans.1 ark:- ark:- |" "ark:|gzip -c > exp/sgmm2_4a/decode/pre_lat.1.gz" 
+# Started at Sun Nov 26 12:53:43 IST 2017
+#
+sgmm2-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.1 --determinize-lattice=false --allow-partial=true --word-symbol-table=exp/sgmm2_4a/graph/words.txt --max-mem=50000000 '--gselect=ark,s,cs:gunzip -c exp/sgmm2_4a/decode/gselect.1.gz| copy-gselect --n=3 ark:- ark:- |' exp/sgmm2_4a/final.alimdl exp/sgmm2_4a/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split2/1/utt2spk scp:data/test/split2/1/cmvn.scp scp:data/test/split2/1/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/sgmm2_4a/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/test/split2/1/utt2spk ark,s,cs:exp/tri3b/decode/trans.1 ark:- ark:- |' 'ark:|gzip -c > exp/sgmm2_4a/decode/pre_lat.1.gz' 
+transform-feats exp/sgmm2_4a/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split2/1/utt2spk scp:data/test/split2/1/cmvn.scp scp:data/test/split2/1/feats.scp ark:- 
+transform-feats --utt2spk=ark:data/test/split2/1/utt2spk ark,s,cs:exp/tri3b/decode/trans.1 ark:- ark:- 
+copy-gselect --n=3 ark:- ark:- 
+JonnyGutteridge-20081120-hav-b0041 DID NOT RETURN UNTIL TOMORROW 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0041 is -4.10896 over 331 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0041 is -4.10896 over 331 frames.
+JonnyGutteridge-20081120-hav-b0042 TEN MINUTES HAD NOT ELAPSED SINCE HE HAD DROPPED THE HANDKERCHIEF 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0042 is -4.82999 over 498 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0042 is -4.82999 over 498 frames.
+JonnyGutteridge-20081120-hav-b0043 IT WON'T BE FOR SALE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0043 is -3.5388 over 311 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0043 is -3.5388 over 311 frames.
+JonnyGutteridge-20081120-hav-b0044 FOR A FEW MOMENTS HE ATE IN SILENCE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0044 is -3.97324 over 386 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0044 is -3.97324 over 386 frames.
+JonnyGutteridge-20081120-hav-b0045 PHILIP DID NOT PURSUE THE SUBJECT 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0045 is -4.18168 over 411 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0045 is -4.18168 over 411 frames.
+JonnyGutteridge-20081120-hav-b0046 PHILIP PRODUCED A COUPLE OF CIGARS TOOK A CHAIR OPPOSITE HIM 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0046 is -4.68383 over 498 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0046 is -4.68383 over 498 frames.
+JonnyGutteridge-20081120-hav-b0047 SUPPOSE YOU SAW MEN WORK THROUGH THE WINDOW 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0047 is -4.26529 over 336 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0047 is -4.26529 over 336 frames.
+JonnyGutteridge-20081120-hav-b0048 HE LOOKS LIKE ONE WHO A PASS THROUGH AN UNCOMFORTABLE HOUR OR TWO 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0048 is -4.89553 over 448 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0048 is -4.89553 over 448 frames.
+JonnyGutteridge-20081120-hav-b0049 THERE WAS NOTHING MORE EXCEPT A LARGE INK BLOT UNDER THE WORDS 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0049 is -4.71009 over 411 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0049 is -4.71009 over 411 frames.
+JonnyGutteridge-20081120-hav-b0050 ALL THIS DAY GREGSON REMAINED IN THE CABIN 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0050 is -4.35487 over 348 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance JonnyGutteridge-20081120-hav-b0050 is -4.35487 over 348 frames.
+Keren-20080605-cps-a0376 YOUR PRICE MY SON IS JUST ABOUT THIRTY PER WEEK 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-cps-a0376 is -4.79188 over 336 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-cps-a0376 is -4.79188 over 336 frames.
+Keren-20080605-cps-a0377 THIS SOUND DID NOT DISTURB THE HUSH AND OFF THE PLACE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-cps-a0377 is -4.73284 over 398 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-cps-a0377 is -4.73284 over 398 frames.
+Keren-20080605-cps-a0378 THAT'S WHY ITS BOUNDARIES ARE ALL GOUGED AND JAGGED 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-cps-a0378 is -4.66634 over 361 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-cps-a0378 is -4.66634 over 361 frames.
+Keren-20080605-cps-a0379 HOW ALL DAY YOU DADDY 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-cps-a0379 is -4.5404 over 211 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-cps-a0379 is -4.5404 over 211 frames.
+Keren-20080605-cps-a0380 THE IN THE CANYONS WATER WAS PLENTIFUL AND ALSO A LUXURIANT FOREST GROWTH 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-cps-a0380 is -4.46307 over 648 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-cps-a0380 is -4.46307 over 648 frames.
+Keren-20080605-cps-a0381 MY NAME'S FERGUSON 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-cps-a0381 is -4.65346 over 298 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-cps-a0381 is -4.65346 over 298 frames.
+Keren-20080605-cps-a0382 DAYLIGHT FOUND HIMSELF CHARMED AND MADE CURIOUS BY THE LOOMED MAN 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-cps-a0382 is -4.49931 over 586 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-cps-a0382 is -4.49931 over 586 frames.
+Keren-20080605-cps-a0383 TO HIS SURPRISE HER ANSWER WAS FLAT AND COME PROMISING 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-cps-a0383 is -5.119 over 336 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-cps-a0383 is -5.119 over 336 frames.
+Keren-20080605-cps-a0384 THE FARMER WORKS THE SOIL AND PRODUCES GRAIN 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-cps-a0384 is -5.00743 over 261 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-cps-a0384 is -5.00743 over 261 frames.
+Keren-20080605-cps-a0385 THAT'S WHAT CARNEGIE DID 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-cps-a0385 is -4.69237 over 198 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-cps-a0385 is -4.69237 over 198 frames.
+Keren-20080605-uzd-a0451 I NOTICED BLOOD SPOUTING FROM KERFOOT'S LEFT HAND 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-uzd-a0451 is -4.80611 over 461 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-uzd-a0451 is -4.80611 over 461 frames.
+Keren-20080605-uzd-a0452 THREE OILERS AND A FOURTH ENGINEER WAS HIS GREETING 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-uzd-a0452 is -4.53612 over 398 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-uzd-a0452 is -4.53612 over 398 frames.
+Keren-20080605-uzd-a0453 EIGHTEEN HUNDRED HE CALCULATED 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-uzd-a0453 is -4.19548 over 273 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-uzd-a0453 is -4.19548 over 273 frames.
+Keren-20080605-uzd-a0454 THE SHARP VOICE OF WOLF LARSEN AROUSED ME 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-uzd-a0454 is -4.65099 over 423 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-uzd-a0454 is -4.65099 over 423 frames.
+Keren-20080605-uzd-a0455 I OBEYED IN A MINUTE OR TWO LATER THEY STOOD BEFORE HIM 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-uzd-a0455 is -4.47627 over 411 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-uzd-a0455 is -4.47627 over 411 frames.
+Keren-20080605-uzd-a0456 BUT IT WON'T CONTINUE SHE SAID WITH EASY CONFIDENCE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-uzd-a0456 is -4.28004 over 448 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-uzd-a0456 is -4.28004 over 448 frames.
+Keren-20080605-uzd-a0457 WHAT I SO ARE I CANNOT AT FIRST BELIEVE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-uzd-a0457 is -4.40533 over 336 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-uzd-a0457 is -4.40533 over 336 frames.
+Keren-20080605-uzd-a0458 THE STOUT WOOD WAS CRUSHED LIKE AN EGGSHELL 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-uzd-a0458 is -4.37872 over 373 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-uzd-a0458 is -4.37872 over 373 frames.
+Keren-20080605-uzd-a0459 THERE'S TOO MUCH OF THE SCHOOLBOY IN ME 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-uzd-a0459 is -4.62587 over 298 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-uzd-a0459 is -4.62587 over 298 frames.
+Keren-20080605-uzd-a0460 I HAD FORGOTTEN THEIR EXISTENCE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-uzd-a0460 is -3.93606 over 273 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-uzd-a0460 is -3.93606 over 273 frames.
+Keren-20080605-vdf-b0068 I ONLY THE CHANCE SOUND HAD LED HIM TO OBSERVE THEM 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-vdf-b0068 is -4.67565 over 386 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-vdf-b0068 is -4.67565 over 386 frames.
+Keren-20080605-vdf-b0069 THE THE INCIDENT HAVE ANYTHING TO DO WAS CHINA AND PIERRE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-vdf-b0069 is -5.2114 over 373 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-vdf-b0069 is -5.2114 over 373 frames.
+Keren-20080605-vdf-b0070 THERE'S NO CHANCE TO FIRE WITHOUT HITTING HIM 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-vdf-b0070 is -4.45797 over 286 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-vdf-b0070 is -4.45797 over 286 frames.
+Keren-20080605-vdf-b0071 THERE'S NO ANSWER FROM THE OTHER SIDE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-vdf-b0071 is -4.50942 over 261 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-vdf-b0071 is -4.50942 over 261 frames.
+Keren-20080605-vdf-b0072 MANY STAND ON AS PIERRE HAD GUIDED HIM 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-vdf-b0072 is -4.2958 over 398 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-vdf-b0072 is -4.2958 over 398 frames.
+Keren-20080605-vdf-b0073 WITH THESE ARGUMENTS HE CONVINCED HIMSELF THEN HE SHOULD GO ON ALONE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-vdf-b0073 is -4.46388 over 498 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-vdf-b0073 is -4.46388 over 498 frames.
+Keren-20080605-vdf-b0074 YET BEHIND THEM THERE WAS ANOTHER AND MORE POWERFUL MOTIVE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-vdf-b0074 is -4.02439 over 473 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-vdf-b0074 is -4.02439 over 473 frames.
+Keren-20080605-vdf-b0075 I IN THAT CASE HE COULD NOT MISS THEM IF YOU USED CAUTION 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-vdf-b0075 is -4.67052 over 411 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-vdf-b0075 is -4.67052 over 411 frames.
+Keren-20080605-vdf-b0076 BEFORE PHILIP COULD RECOVER HIMSELF JEANNE'S STARTLED GUARDS WERE UPON HIM 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-vdf-b0076 is -4.8148 over 473 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-vdf-b0076 is -4.8148 over 473 frames.
+Keren-20080605-vdf-b0077 IT IS THE NEAREST REFUGE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Keren-20080605-vdf-b0077 is -4.6021 over 198 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Keren-20080605-vdf-b0077 is -4.6021 over 198 frames.
+Ronin_Sage-20080110-ny-rp-02 THEY ACT AS A PRISM AND FORM A RAINBOW 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-02 is -4.30954 over 459 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-02 is -4.30954 over 459 frames.
+Ronin_Sage-20080110-ny-rp-03 THE RAINBOW IS A DIVISION OF WHITE LIGHT INTO MANY BEAUTIFUL COLORS 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-03 is -4.25218 over 570 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-03 is -4.25218 over 570 frames.
+Ronin_Sage-20080110-ny-rp-04 THESE TAKE THE SHAPE OF A LONG ROUND ARCH WITH ITS PATH HIGH ABOVE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-04 is -4.20778 over 647 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-04 is -4.20778 over 647 frames.
+Ronin_Sage-20080110-ny-rp-05 AND ITS TWO ENDS APPARENTLY BEYOND THE HORIZON 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-05 is -4.00635 over 476 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-05 is -4.00635 over 476 frames.
+Ronin_Sage-20080110-ny-rp-06 THERE IS ACCORDING TO LEGEND A BOILING POT OF GOLD AT MORNING 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-06 is -4.14103 over 629 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-06 is -4.14103 over 629 frames.
+Ronin_Sage-20080110-ny-rp-07 PEOPLE LOOK BUT NO ONE EVER FINDS IT 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-07 is -3.85229 over 408 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-07 is -3.85229 over 408 frames.
+Ronin_Sage-20080110-ny-rp-08 WHEN A MAN LOOKS FOR SOMETHING BEYOND HIS REACH 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-08 is -4.0169 over 425 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-08 is -4.0169 over 425 frames.
+Ronin_Sage-20080110-ny-rp-09 HIS FRIENDS SAY HE IS LOOKING FOR THE POT OF GOLD AT THE AND OF THE RAINBOW 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-09 is -4.20475 over 536 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-09 is -4.20475 over 536 frames.
+Ronin_Sage-20080110-ny-rp-10 DROPPED THE CENTURIES PEOPLE TO EXPLAIN THE RAINBOW IN VARIOUS WAYS 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-10 is -4.14784 over 536 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-10 is -4.14784 over 536 frames.
+Ronin_Sage-20080110-ny-rp-11 SOME HAVE ACCEPTED IT AS A MIRACLE WITHOUT PHYSICAL EXPLANATION 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-11 is -4.21398 over 527 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance Ronin_Sage-20080110-ny-rp-11 is -4.21398 over 527 frames.
+anonymous0046-20080428-cxb-b0111 THE JOURNEY WAS CONTINUED AT DAWN 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0046-20080428-cxb-b0111 is -4.3093 over 348 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0046-20080428-cxb-b0111 is -4.3093 over 348 frames.
+anonymous0046-20080428-cxb-b0112 JEANNE AND PIERRE BOTH GAZED TOWARD THE GREAT ROCK 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0046-20080428-cxb-b0112 is -4.43579 over 511 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0046-20080428-cxb-b0112 is -4.43579 over 511 frames.
+anonymous0046-20080428-cxb-b0113 THERE WAS SOMETHING PATHETIC IN THE GIRL'S ATTITUDE NOW 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0046-20080428-cxb-b0113 is -4.50512 over 448 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0046-20080428-cxb-b0113 is -4.50512 over 448 frames.
+anonymous0046-20080428-cxb-b0114 HE MOVED HIS POSITION AND THE ILLUSION WAS GONE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0046-20080428-cxb-b0114 is -4.25089 over 411 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0046-20080428-cxb-b0114 is -4.25089 over 411 frames.
+anonymous0046-20080428-cxb-b0115 FOR TWO HOURS NOT A WORD PASSED BETWEEN THEM 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0046-20080428-cxb-b0115 is -4.33145 over 361 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0046-20080428-cxb-b0115 is -4.33145 over 361 frames.
+anonymous0046-20080428-cxb-b0116 I HAVE HUNTED ALONG THIS RIDGE REPLIED PHILIP 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0046-20080428-cxb-b0116 is -4.21218 over 398 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0046-20080428-cxb-b0116 is -4.21218 over 398 frames.
+anonymous0046-20080428-cxb-b0117 THAT'S THORPE'S SAID THE YOUNG ENGINEER 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0046-20080428-cxb-b0117 is -3.86938 over 411 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0046-20080428-cxb-b0117 is -3.86938 over 411 frames.
+anonymous0046-20080428-cxb-b0118 WE SAW YOUR LIGHT AND FIGHTING ONE MIND A CALL 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0046-20080428-cxb-b0118 is -4.71701 over 373 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0046-20080428-cxb-b0118 is -4.71701 over 373 frames.
+anonymous0046-20080428-cxb-b0119 BILLINGER MAY ARRIVE IN TIME 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0046-20080428-cxb-b0119 is -4.37271 over 298 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0046-20080428-cxb-b0119 is -4.37271 over 298 frames.
+anonymous0046-20080428-cxb-b0120 THERE'S THE HITCH REPLIED THORPE ROLLING A CIGARETTE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0046-20080428-cxb-b0120 is -4.5908 over 373 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0046-20080428-cxb-b0120 is -4.5908 over 373 frames.
+anonymous0122-20081010-uhe-b0491 JACOB BRINKER WHO HER ASSIST ROADMATE BROUGHT TO NEWS 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0122-20081010-uhe-b0491 is -4.89036 over 636 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0122-20081010-uhe-b0491 is -4.89036 over 636 frames.
+anonymous0122-20081010-uhe-b0492 IN TO RECEIVE TO TENETS AND JARGON OF PSYCHOLOGY BACK OF ME 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0122-20081010-uhe-b0492 is -5.03112 over 773 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0122-20081010-uhe-b0492 is -5.03112 over 773 frames.
+anonymous0122-20081010-uhe-b0493 SO HUGHIE JUDGE OF SHE AND THING OF THE FROST 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0122-20081010-uhe-b0493 is -5.15509 over 398 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0122-20081010-uhe-b0493 is -5.15509 over 398 frames.
+anonymous0122-20081010-uhe-b0494 NEVER SO STRANGE A PROFIT CALM FROM JERUSALEM 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0122-20081010-uhe-b0494 is -5.10204 over 386 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0122-20081010-uhe-b0494 is -5.10204 over 386 frames.
+anonymous0122-20081010-uhe-b0495 WILL WE WHO HAVE ENDURED SO MUCH SURELY CAN ENDURE A LITTLE MORE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0122-20081010-uhe-b0495 is -4.98045 over 598 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0122-20081010-uhe-b0495 is -4.98045 over 598 frames.
+anonymous0122-20081010-uhe-b0496 I HAVE SEEN MYSELF THAT ONE THEN TURNED COME ATTEMPTED TO FIGHT THE SKY PHILIP FOR SINCE I 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0122-20081010-uhe-b0496 is -5.09584 over 723 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0122-20081010-uhe-b0496 is -5.09584 over 723 frames.
+anonymous0122-20081010-uhe-b0497 BY GREAT DRAWBACK TO FARMING IN CALIFORNIA IS OUR LONG DRY SUMMER 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0122-20081010-uhe-b0497 is -5.06715 over 611 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0122-20081010-uhe-b0497 is -5.06715 over 611 frames.
+anonymous0122-20081010-uhe-b0498 I REMEMBERED THE RED ONE AUNT ITALIAN RANCHO AND SHUDDERED INWARDLY 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0122-20081010-uhe-b0498 is -5.08536 over 723 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0122-20081010-uhe-b0498 is -5.08536 over 723 frames.
+anonymous0122-20081010-uhe-b0499 I SAID AND AND DISMISSED THE MATTER AS NOT WORTH THINKING ABOUT HIM 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0122-20081010-uhe-b0499 is -5.26665 over 523 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0122-20081010-uhe-b0499 is -5.26665 over 523 frames.
+anonymous0122-20081010-uhe-b0500 THEN CAME MY BOY CODE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0122-20081010-uhe-b0500 is -4.95482 over 311 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0122-20081010-uhe-b0500 is -4.95482 over 311 frames.
+anonymous0155-20081116-pfp-b0064 I'M GOING DOWN THERE WITH YOU AND GOING TO FIGHT 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0155-20081116-pfp-b0064 is -5.20129 over 280 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0155-20081116-pfp-b0064 is -5.20129 over 280 frames.
+anonymous0155-20081116-pfp-b0065 NOW HAVE YOU GOT ANYTHING TO SAY GUESS ME MR PHILIP 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0155-20081116-pfp-b0065 is -4.76794 over 305 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0155-20081116-pfp-b0065 is -4.76794 over 305 frames.
+anonymous0155-20081116-pfp-b0066 IF I MEET HER AGAIN I SHALL APOLOGIZE SAID EILEEN 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0155-20081116-pfp-b0066 is -4.9214 over 348 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0155-20081116-pfp-b0066 is -4.9214 over 348 frames.
+anonymous0155-20081116-pfp-b0067 BELOW HIM THE SHADOW WAS BROKEN INTO A POOL OF RIPPLING STARLIGHT 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0155-20081116-pfp-b0067 is -5.02825 over 331 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0155-20081116-pfp-b0067 is -5.02825 over 331 frames.
+anonymous0155-20081116-pfp-b0068 ONLY THE CHANCE SOUND HAD LED HIM TO OBSERVE THEM 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0155-20081116-pfp-b0068 is -4.44098 over 339 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0155-20081116-pfp-b0068 is -4.44098 over 339 frames.
+anonymous0155-20081116-pfp-b0069 GOOD THE INCIDENT HAVE AT HIM TO DO WITH JEANNE AND PIERRE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0155-20081116-pfp-b0069 is -4.6659 over 305 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0155-20081116-pfp-b0069 is -4.6659 over 305 frames.
+anonymous0155-20081116-pfp-b0070 THERE WAS NO CHANCE TO FIRE WITHOUT HITTING HIM 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0155-20081116-pfp-b0070 is -4.2689 over 263 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0155-20081116-pfp-b0070 is -4.2689 over 263 frames.
+anonymous0155-20081116-pfp-b0071 THERE WAS NO ANSWER FROM THE OTHER SIDE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0155-20081116-pfp-b0071 is -4.56302 over 245 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0155-20081116-pfp-b0071 is -4.56302 over 245 frames.
+anonymous0155-20081116-pfp-b0072 THEN HE HASTENED ON AS PIERRE HAD GUIDED HIM 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0155-20081116-pfp-b0072 is -4.48043 over 314 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0155-20081116-pfp-b0072 is -4.48043 over 314 frames.
+anonymous0155-20081116-pfp-b0073 WITH THESE ARGUMENTS HE CONVINCED HIMSELF OF HIS GO ON ALONE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0155-20081116-pfp-b0073 is -4.56311 over 433 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0155-20081116-pfp-b0073 is -4.56311 over 433 frames.
+anonymous0208-20090606-yyv-rp-15 THE NORSEMEN CONSIDERED THE RAINBOW AS A BRIDGE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-15 is -4.61096 over 356 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-15 is -4.61096 over 356 frames.
+anonymous0208-20090606-yyv-rp-16 AS A WHICH THE GODS PASSED FROM THE BATH TO THAT HIM IN THE SKY 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-16 is -4.83012 over 450 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-16 is -4.83012 over 450 frames.
+anonymous0208-20090606-yyv-rp-17 OTHERS HAVE TRIED TO EXPLAIN THE PHENOMENON PHYSICALLY 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-17 is -4.19063 over 484 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-17 is -4.19063 over 484 frames.
+anonymous0208-20090606-yyv-rp-18 ARISTOTLE THOUGHT THAT THE RAINBOW WAS CAUSED BY 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-18 is -4.81169 over 339 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-18 is -4.81169 over 339 frames.
+anonymous0208-20090606-yyv-rp-19 REFLECTION OF THE SUN'S RAYS BY THE RAIN 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-19 is -4.45684 over 314 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-19 is -4.45684 over 314 frames.
+anonymous0208-20090606-yyv-rp-20 SINCE THEN PHYSICISTS HAVE FOUND THAT IT WAS NOT REFLECTION 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-20 is -4.66565 over 373 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-20 is -4.66565 over 373 frames.
+anonymous0208-20090606-yyv-rp-21 BUT REFRACTION BY THE RAINDROPS WHICH COURSE SAYS THE RAINBOWS 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-21 is -4.44615 over 476 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-21 is -4.44615 over 476 frames.
+anonymous0208-20090606-yyv-rp-22 MANY COMPLICATED IDEAS ABOUT THE RAINBOW HAVE BEEN FORMED 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-22 is -4.13718 over 561 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-22 is -4.13718 over 561 frames.
+anonymous0208-20090606-yyv-rp-23 THE DIFFERENCE IN THE RAINBOW DEPENDS CONSIDERABLY UPON THE SIZE OF THE DROPS 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-23 is -4.82772 over 467 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-23 is -4.82772 over 467 frames.
+anonymous0208-20090606-yyv-rp-24 AND THE WAIT FOR THE COLORED BAND INCREASES AS THE SIZE THE DROPS INCREASES 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-24 is -4.46308 over 621 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0208-20090606-yyv-rp-24 is -4.46308 over 621 frames.
+anonymous0226-20090711-zoe-b0264 BUT THIS TIME WAS SAXON WHO REBELLED 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0226-20090711-zoe-b0264 is -4.59798 over 348 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0226-20090711-zoe-b0264 is -4.59798 over 348 frames.
+anonymous0226-20090711-zoe-b0265 I WAS NOT TO CRY OUT IN THE FACE OF FEAR 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0226-20090711-zoe-b0265 is -5.29834 over 336 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0226-20090711-zoe-b0265 is -5.29834 over 336 frames.
+anonymous0226-20090711-zoe-b0266 AND NOW PUT YOURSELF IN MY PLACE FOR A MOMENT 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0226-20090711-zoe-b0266 is -4.71794 over 361 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0226-20090711-zoe-b0266 is -4.71794 over 361 frames.
+anonymous0226-20090711-zoe-b0267 THE BOY THREW BACK HIS HEAD WITH PRIDE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0226-20090711-zoe-b0267 is -5.06227 over 336 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0226-20090711-zoe-b0267 is -5.06227 over 336 frames.
+anonymous0226-20090711-zoe-b0268 SAXON NODDED AND THE BOY FROWNED 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0226-20090711-zoe-b0268 is -4.93841 over 361 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0226-20090711-zoe-b0268 is -4.93841 over 361 frames.
+anonymous0226-20090711-zoe-b0269 WHY NOT LIKE ANY RAILROAD STATION OR FERRY DEPOT 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0226-20090711-zoe-b0269 is -4.78906 over 436 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0226-20090711-zoe-b0269 is -4.78906 over 436 frames.
+anonymous0226-20090711-zoe-b0270 BECAUSE THROW STONES WITH THEIR FEET 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0226-20090711-zoe-b0270 is -4.89992 over 336 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0226-20090711-zoe-b0270 is -4.89992 over 336 frames.
+anonymous0226-20090711-zoe-b0271 IT WAS PUT TOGETHER IN A CASUAL HELTER SKELTER SORT AWAY 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0226-20090711-zoe-b0271 is -5.25452 over 398 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0226-20090711-zoe-b0271 is -5.25452 over 398 frames.
+anonymous0226-20090711-zoe-b0272 THESE WERE MERELY STOUT STICKS AN INCH OR SO IN DIAMETER 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0226-20090711-zoe-b0272 is -4.75608 over 411 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0226-20090711-zoe-b0272 is -4.75608 over 411 frames.
+anonymous0226-20090711-zoe-b0273 THEN IT WAS THAT A STRANGE THING HAPPENED 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0226-20090711-zoe-b0273 is -4.66129 over 348 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0226-20090711-zoe-b0273 is -4.66129 over 348 frames.
+anonymous0325-20091220-ijn-rp-13 THE GREEKS USED TO IMAGINE THAT IT WAS A SIGN 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-13 is -4.44187 over 467 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-13 is -4.44187 over 467 frames.
+anonymous0325-20091220-ijn-rp-14 FROM THE GODS TO FORETELL WAR ON HEAVY RAIN 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-14 is -4.29387 over 450 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-14 is -4.29387 over 450 frames.
+LOG (copy-gselect:main():copy-gselect.cc:71) Copied 110 gselect objects,  limiting sizes to 3
+anonymous0325-20091220-ijn-rp-15 THE NORSEMEN CONSIDERED THE RAINBOW AS A BRIDGE 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-15 is -4.15313 over 416 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-15 is -4.15313 over 416 frames.
+LOG (apply-cmvn:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 110 utterances, errors on 0
+anonymous0325-20091220-ijn-rp-16 THE GODS PASSED FROM EARTH TO THEIR HOME IN THE SKY 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-16 is -4.45234 over 420 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-16 is -4.45234 over 420 frames.
+anonymous0325-20091220-ijn-rp-17 OTHERS HAVE TRIED TO EXPLAIN THE PHENOMENON PHILIP PHYSICALLY 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-17 is -4.518 over 519 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-17 is -4.518 over 519 frames.
+anonymous0325-20091220-ijn-rp-18 ARISTOTLE THOUGHT THAT THE RAINBOW WAS CAUSED BY 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-18 is -4.38047 over 388 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-18 is -4.38047 over 388 frames.
+LOG (transform-feats:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -95.361 over 45347 frames.
+LOG (transform-feats:main():transform-feats.cc:161) Applied transform to 110 utterances; 0 had errors.
+anonymous0325-20091220-ijn-rp-19 THE SUN'S RAYS BY THE RAIN 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-19 is -4.17208 over 238 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-19 is -4.17208 over 238 frames.
+anonymous0325-20091220-ijn-rp-20 THEN PHYSICISTS HAVE FOUND THAT IT IS NOT REFLECTION 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-20 is -4.83152 over 337 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-20 is -4.83152 over 337 frames.
+LOG (transform-feats:main():transform-feats.cc:158) Overall average logdet is 3.94747 over 45347 frames.
+LOG (transform-feats:main():transform-feats.cc:161) Applied transform to 110 utterances; 0 had errors.
+anonymous0325-20091220-ijn-rp-21 THE REFRACTION BY THE RAINDROPS WHICH CAUSES THE RAINBOWS 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-21 is -4.33906 over 566 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-21 is -4.33906 over 566 frames.
+anonymous0325-20091220-ijn-rp-22 MANY COMPLICATED IDEAS ABOUT THE RAINBOWS HAVE BEEN FORMED 
+LOG (sgmm2-latgen-faster:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-22 is -4.70899 over 382 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:209) Log-like per frame for utterance anonymous0325-20091220-ijn-rp-22 is -4.70899 over 382 frames.
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:252) Time taken [excluding initialization] 132.802s: real-time factor assuming 100 frames/sec is 0.292857
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:255) Done 110 utterances, failed for 0
+LOG (sgmm2-latgen-faster:main():sgmm2-latgen-faster.cc:257) Overall log-likelihood per frame = -4.56593 over 45347 frames.
+# Accounting: time=133 threads=1
+# Ended (code 0) at Sun Nov 26 12:55:56 IST 2017, elapsed time 133 seconds

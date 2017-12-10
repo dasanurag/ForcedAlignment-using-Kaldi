@@ -1,0 +1,448 @@
+# lattice-best-path --lm-scale=15 --word-symbol-table=exp/sgmm2_4a/graph/words.txt "ark:gunzip -c exp/sgmm2_4a/decode/lat.*.gz|" ark,t:exp/sgmm2_4a/decode/scoring/15.tra 
+# Started at Sun Nov 26 12:56:50 IST 2017
+#
+lattice-best-path --lm-scale=15 --word-symbol-table=exp/sgmm2_4a/graph/words.txt 'ark:gunzip -c exp/sgmm2_4a/decode/lat.*.gz|' ark,t:exp/sgmm2_4a/decode/scoring/15.tra 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance JonnyGutteridge-20081120-hav-b0041, best cost 611.698 + 12612.9 = 13224.6 over 331 frames.
+JonnyGutteridge-20081120-hav-b0041 DID NOT RETURN UNTIL TOMORROW 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance JonnyGutteridge-20081120-hav-b0042, best cost 1180.31 + 22691.3 = 23871.6 over 498 frames.
+JonnyGutteridge-20081120-hav-b0042 TEN MINUTES HAD NOT ELAPSED SINCE HE HAD DROPPED THE HANDKERCHIEF 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance JonnyGutteridge-20081120-hav-b0043, best cost 566.925 + 10191.4 = 10758.3 over 311 frames.
+JonnyGutteridge-20081120-hav-b0043 IT WON'T BE FOR SALE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance JonnyGutteridge-20081120-hav-b0044, best cost 881.273 + 14081.9 = 14963.2 over 386 frames.
+JonnyGutteridge-20081120-hav-b0044 FOR A FEW MOMENTS HE ATE IN SILENCE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance JonnyGutteridge-20081120-hav-b0045, best cost 764.159 + 16037 = 16801.2 over 411 frames.
+JonnyGutteridge-20081120-hav-b0045 PHILIP DID NOT PURSUE THE SUBJECT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance JonnyGutteridge-20081120-hav-b0046, best cost 1245.17 + 21891.5 = 23136.7 over 498 frames.
+JonnyGutteridge-20081120-hav-b0046 PHILIP PRODUCED A COUPLE OF CIGARS TOOK A CHAIR OPPOSITE HIM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance JonnyGutteridge-20081120-hav-b0047, best cost 964.605 + 13164.4 = 14129 over 336 frames.
+JonnyGutteridge-20081120-hav-b0047 SUPPOSE YOU SAW ME AT WORK THROUGH THE WINDOW 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance JonnyGutteridge-20081120-hav-b0048, best cost 1264.41 + 20696.7 = 21961.1 over 448 frames.
+JonnyGutteridge-20081120-hav-b0048 HE LOOKED LIKE ONE WHO HAD PASSED THROUGH AN UNCOMFORTABLE HOUR OR TWO 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance JonnyGutteridge-20081120-hav-b0049, best cost 1069.86 + 18208.9 = 19278.7 over 411 frames.
+JonnyGutteridge-20081120-hav-b0049 THERE WAS NOTHING MORE EXCEPT A LARGE INK BLOT UNDER THE WORDS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance JonnyGutteridge-20081120-hav-b0050, best cost 919.636 + 14069.1 = 14988.7 over 348 frames.
+JonnyGutteridge-20081120-hav-b0050 ALL THIS DAY GREGSON REMAINED IN THE CABIN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-cps-a0376, best cost 924.372 + 15127.4 = 16051.8 over 336 frames.
+Keren-20080605-cps-a0376 YOUR PRICE MY SON IS JUST ABOUT THIRTY PER WEEK 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-cps-a0377, best cost 1147.85 + 17709.8 = 18857.7 over 398 frames.
+Keren-20080605-cps-a0377 THIS SOUND DID NOT DISTURB THE HUSH AND OFF THE PLACE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-cps-a0378, best cost 886.757 + 15847.6 = 16734.4 over 361 frames.
+Keren-20080605-cps-a0378 THAT'S WHY ITS BOUNDARIES ARE ALL GOUGED AND JAGGED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-cps-a0379, best cost 577.461 + 8894.79 = 9472.25 over 211 frames.
+Keren-20080605-cps-a0379 HOW OLD ARE YOU DADDY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-cps-a0380, best cost 1421.49 + 27342.6 = 28764.1 over 648 frames.
+Keren-20080605-cps-a0380 THE IN THE CANYONS WATER WAS PLENTIFUL AND ALSO A LUXURIANT FOREST GROWTH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-cps-a0381, best cost 443.159 + 13157 = 13600.1 over 298 frames.
+Keren-20080605-cps-a0381 MY NAME'S FERGUSON 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-cps-a0382, best cost 1284.56 + 24975.4 = 26259.9 over 586 frames.
+Keren-20080605-cps-a0382 DAYLIGHT FOUND HIMSELF CHARMED AND MADE CURIOUS BY THE LITTLE MAN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-cps-a0383, best cost 963.798 + 16313.6 = 17277.4 over 336 frames.
+Keren-20080605-cps-a0383 TO SURPRISE HER ANSWER WAS FLAT AND UNCOMPROMISING 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-cps-a0384, best cost 752.734 + 12418.2 = 13171 over 261 frames.
+Keren-20080605-cps-a0384 THE FARMER WORKS THE SOIL AND PRODUCES GRAIN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-cps-a0385, best cost 481.79 + 8829.04 = 9310.83 over 198 frames.
+Keren-20080605-cps-a0385 THAT'S WHAT CARNEGIE DID 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-uzd-a0451, best cost 806.933 + 21378.5 = 22185.4 over 461 frames.
+Keren-20080605-uzd-a0451 I NOTICED BLOOD SPOUTING FROM KERFOOT'S LEFT HAND 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-uzd-a0452, best cost 998.295 + 17035.4 = 18033.7 over 398 frames.
+Keren-20080605-uzd-a0452 THREE OILERS AND A FOURTH ENGINEER WAS HIS GREETING 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-uzd-a0453, best cost 546.22 + 10673.3 = 11219.5 over 273 frames.
+Keren-20080605-uzd-a0453 EIGHTEEN HUNDRED HE CALCULATED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-uzd-a0454, best cost 827.6 + 18725.5 = 19553.1 over 423 frames.
+Keren-20080605-uzd-a0454 THE SHARP VOICE OF WOLF LARSEN AROUSED ME 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-uzd-a0455, best cost 1200.95 + 17213.6 = 18414.6 over 411 frames.
+Keren-20080605-uzd-a0455 I OBEYED IN A MINUTE OR TWO LATER THEY STOOD BEFORE HIM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-uzd-a0456, best cost 952.025 + 17983.8 = 18935.8 over 448 frames.
+Keren-20080605-uzd-a0456 BUT IT WON'T CONTINUE SHE SAID WITH EASY CONFIDENCE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-uzd-a0457, best cost 970.786 + 13764 = 14734.8 over 336 frames.
+Keren-20080605-uzd-a0457 WHAT I SO I CANNOT AT FIRST BELIEVE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-uzd-a0458, best cost 843.004 + 15332.4 = 16175.4 over 373 frames.
+Keren-20080605-uzd-a0458 THE STOUT WOOD WAS CRUSHED LIKE AN EGGSHELL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-uzd-a0459, best cost 815.443 + 12870.1 = 13685.5 over 298 frames.
+Keren-20080605-uzd-a0459 THERE'S TOO MUCH OF THE SCHOOLBOY IN ME 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-uzd-a0460, best cost 574.5 + 10048.2 = 10622.7 over 273 frames.
+Keren-20080605-uzd-a0460 I HAD FORGOTTEN THEIR EXISTENCE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-vdf-b0068, best cost 1092.23 + 16881 = 17973.2 over 386 frames.
+Keren-20080605-vdf-b0068 I ONLY THE CHANCE SOUND HAD LED HIM TO OBSERVE THEM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-vdf-b0069, best cost 1161.08 + 18433.9 = 19595 over 373 frames.
+Keren-20080605-vdf-b0069 THE THE INCIDENT HAVE ANYTHING TO DO WITH SHINING AND PIERRE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-vdf-b0070, best cost 811.297 + 11944.9 = 12756.2 over 286 frames.
+Keren-20080605-vdf-b0070 THERE'S NO CHANCE TO FIRE WITHOUT HITTING HIM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-vdf-b0071, best cost 755.039 + 11049.7 = 11804.7 over 261 frames.
+Keren-20080605-vdf-b0071 THERE'S NO ANSWER FROM THE OTHER SIDE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-vdf-b0072, best cost 1048.2 + 15950.2 = 16998.4 over 398 frames.
+Keren-20080605-vdf-b0072 MANY STAND ON AS PIERRE HAD GUIDED HIM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-vdf-b0073, best cost 1428.15 + 20629.3 = 22057.4 over 498 frames.
+Keren-20080605-vdf-b0073 WITH THESE ARGUMENTS HE CONVINCED HIMSELF THEN HE SHOULD GO ON ALONE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-vdf-b0074, best cost 1159.12 + 17782.9 = 18942 over 473 frames.
+Keren-20080605-vdf-b0074 YET BEHIND THEM THERE WAS ANOTHER AND MORE POWERFUL MOTIVE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-vdf-b0075, best cost 1169.74 + 17985.9 = 19155.7 over 411 frames.
+Keren-20080605-vdf-b0075 IN THAT CASE HE COULD NOT MISS THEM IF YOU USED CAUTION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-vdf-b0076, best cost 1117.31 + 21562.5 = 22679.8 over 473 frames.
+Keren-20080605-vdf-b0076 BEFORE PHILIP COULD RECOVER HIMSELF JEANNE'S STARTLED GUARDS WERE UPON HIM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Keren-20080605-vdf-b0077, best cost 524.253 + 8535.09 = 9059.34 over 198 frames.
+Keren-20080605-vdf-b0077 IT IS THE NEAREST REFUGE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Ronin_Sage-20080110-ny-rp-02, best cost 1009.86 + 18381.2 = 19391 over 459 frames.
+Ronin_Sage-20080110-ny-rp-02 THEY ACT AS A PRISM AND FORM A RAINBOW 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Ronin_Sage-20080110-ny-rp-03, best cost 1094.03 + 22679.1 = 23773.2 over 570 frames.
+Ronin_Sage-20080110-ny-rp-03 THE RAINBOW IS A DIVISION OF WHITE LIGHT INTO MANY BEAUTIFUL COLORS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Ronin_Sage-20080110-ny-rp-04, best cost 1362.33 + 25357 = 26719.3 over 647 frames.
+Ronin_Sage-20080110-ny-rp-04 THESE TAKE THE SHAPE OF A LONG ROUND ARCH WITH ITS PATH HIGH ABOVE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Ronin_Sage-20080110-ny-rp-05, best cost 819.968 + 17752.7 = 18572.7 over 476 frames.
+Ronin_Sage-20080110-ny-rp-05 AND ITS TWO ENDS APPARENTLY BEYOND THE HORIZON 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Ronin_Sage-20080110-ny-rp-06, best cost 1266.84 + 24142.3 = 25409.2 over 629 frames.
+Ronin_Sage-20080110-ny-rp-06 THERE IS ACCORDING TO LEGEND A BOILING POT OF GOLD AT MORNING 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Ronin_Sage-20080110-ny-rp-07, best cost 861.208 + 14588.1 = 15449.3 over 408 frames.
+Ronin_Sage-20080110-ny-rp-07 PEOPLE LOOK BUT NO ONE EVER FINDS IT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Ronin_Sage-20080110-ny-rp-08, best cost 988.696 + 15651 = 16639.7 over 425 frames.
+Ronin_Sage-20080110-ny-rp-08 WHEN A MAN LOOKS FOR SOMETHING BEYOND HIS REACH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Ronin_Sage-20080110-ny-rp-09, best cost 1476.19 + 20665.3 = 22141.4 over 536 frames.
+Ronin_Sage-20080110-ny-rp-09 HIS FRIENDS SAY HE IS LOOKING FOR THE POT OF GOLD AT THE AND THE RAINBOW 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Ronin_Sage-20080110-ny-rp-10, best cost 1246.96 + 20496.8 = 21743.8 over 536 frames.
+Ronin_Sage-20080110-ny-rp-10 DROPPED THE CENTURIES PEOPLE HAVE EXPLAINED THE RAINBOW IN VARIOUS WAYS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance Ronin_Sage-20080110-ny-rp-11, best cost 1099.06 + 20577 = 21676 over 527 frames.
+Ronin_Sage-20080110-ny-rp-11 SOME HAVE ACCEPTED IT AS A MIRACLE WITHOUT PHYSICAL EXPLANATION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0046-20080428-cxb-b0111, best cost 744.917 + 14070.6 = 14815.5 over 348 frames.
+anonymous0046-20080428-cxb-b0111 THE JOURNEY WAS CONTINUED AT DAWN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0046-20080428-cxb-b0112, best cost 1064.37 + 21440.4 = 22504.7 over 511 frames.
+anonymous0046-20080428-cxb-b0112 JEANNE AND PIERRE BOTH GAZED TOWARD THE GREAT ROCK 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0046-20080428-cxb-b0113, best cost 967.172 + 19031.7 = 19998.8 over 448 frames.
+anonymous0046-20080428-cxb-b0113 THERE WAS SOMETHING PATHETIC IN THE GIRL'S ATTITUDE NOW 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0046-20080428-cxb-b0114, best cost 989.783 + 16415.2 = 17404.9 over 411 frames.
+anonymous0046-20080428-cxb-b0114 HE MOVED HIS POSITION AND THE ILLUSION WAS GONE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0046-20080428-cxb-b0115, best cost 907.16 + 14666.9 = 15574.1 over 361 frames.
+anonymous0046-20080428-cxb-b0115 FOR TWO HOURS NOT A WORD PASSED BETWEEN THEM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0046-20080428-cxb-b0116, best cost 840.114 + 15883 = 16723.1 over 398 frames.
+anonymous0046-20080428-cxb-b0116 I HAVE HUNTED ALONG THIS RIDGE REPLIED PHILIP 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0046-20080428-cxb-b0117, best cost 792.819 + 14874.4 = 15667.2 over 411 frames.
+anonymous0046-20080428-cxb-b0117 THAT'S THORPE'S SAID THE YOUNG ENGINEER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0046-20080428-cxb-b0118, best cost 1148.26 + 16305.1 = 17453.3 over 373 frames.
+anonymous0046-20080428-cxb-b0118 WE SAW YOUR LIGHT AND FIND ONE MIND A CALL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0046-20080428-cxb-b0119, best cost 631.759 + 12309.3 = 12941 over 298 frames.
+anonymous0046-20080428-cxb-b0119 BILLINGER MAY ARRIVE IN TIME 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0046-20080428-cxb-b0120, best cost 912.097 + 16102.4 = 17014.5 over 373 frames.
+anonymous0046-20080428-cxb-b0120 THERE'S THE HITCH REPLIED THORPE ROLLING A CIGARETTE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0122-20081010-uhe-b0491, best cost 1355.93 + 29763.2 = 31119.1 over 636 frames.
+anonymous0122-20081010-uhe-b0491 JACOB BRINKER WHO HER ASSIST ROADMATE BROUGHT THE NEWS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0122-20081010-uhe-b0492, best cost 1496.96 + 37236.2 = 38733.2 over 773 frames.
+anonymous0122-20081010-uhe-b0492 IN TO SEE TO TENETS AND JARGON OF PSYCHOLOGY BACK OF THE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0122-20081010-uhe-b0493, best cost 1299.7 + 19336 = 20635.7 over 398 frames.
+anonymous0122-20081010-uhe-b0493 HOW YOU JOAN OF SHE I THINK OF THE FROST 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0122-20081010-uhe-b0494, best cost 1076.64 + 18689.1 = 19765.7 over 386 frames.
+anonymous0122-20081010-uhe-b0494 NEVER SO STRANGE A PROFIT CONFERENCE JERUSALEM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0122-20081010-uhe-b0495, best cost 1206.81 + 28342.4 = 29549.2 over 598 frames.
+anonymous0122-20081010-uhe-b0495 WE WHO HAVE ENDURED SO MUCH SURELY CAN ENDURE A LITTLE MORE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0122-20081010-uhe-b0496, best cost 2131.09 + 34984.4 = 37115.4 over 723 frames.
+anonymous0122-20081010-uhe-b0496 I HAVE SEEN MYSELF THAT ONE THEN TURNED COME ATTEMPTED TO FIGHT THE SKY PHILIP THE SUICIDE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0122-20081010-uhe-b0497, best cost 1373.75 + 29550.2 = 30924 over 611 frames.
+anonymous0122-20081010-uhe-b0497 BY GREAT DRAWBACK TO FARMING IN CALIFORNIA IS OUR LONG DRY SUMMER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0122-20081010-uhe-b0498, best cost 1290.44 + 35374.7 = 36665.2 over 723 frames.
+anonymous0122-20081010-uhe-b0498 I REMEMBERED THE RED WINE OF THE ITALIAN RANCHO AND SHUDDERED INWARDLY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0122-20081010-uhe-b0499, best cost 1407.24 + 26172.3 = 27579.6 over 523 frames.
+anonymous0122-20081010-uhe-b0499 I SAID AND AND DISMISSED THE MATTER AS NOT WORTH THINKING ABOUT HIM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0122-20081010-uhe-b0500, best cost 599.988 + 14638.4 = 15238.4 over 311 frames.
+anonymous0122-20081010-uhe-b0500 THEN CAME MY BOY CODE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0155-20081116-pfp-b0064, best cost 1088.6 + 13448.2 = 14536.8 over 280 frames.
+anonymous0155-20081116-pfp-b0064 I'M GOING DOWN THERE WITH YOU AND GOING TO FIGHT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0155-20081116-pfp-b0065, best cost 1139.67 + 13458.4 = 14598 over 305 frames.
+anonymous0155-20081116-pfp-b0065 NOW HAVE YOU GOT ANYTHING TO SAY AGAINST ME MR PHILIP 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0155-20081116-pfp-b0066, best cost 1066.17 + 16094.2 = 17160.3 over 348 frames.
+anonymous0155-20081116-pfp-b0066 IF I MEET HER AGAIN I SHALL APOLOGIZE SAID EILEEN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0155-20081116-pfp-b0067, best cost 1204.11 + 15511.9 = 16716 over 331 frames.
+anonymous0155-20081116-pfp-b0067 BELOW HIM THE SHADOW WAS BROKEN INTO A POOL OF RIPPLING STARLIGHT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0155-20081116-pfp-b0068, best cost 1063.28 + 13900.9 = 14964.2 over 339 frames.
+anonymous0155-20081116-pfp-b0068 ONLY THE CHANCE SOUND HAD LED HIM TO OBSERVE THEM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0155-20081116-pfp-b0069, best cost 1121.18 + 13215.6 = 14336.7 over 305 frames.
+anonymous0155-20081116-pfp-b0069 GOOD THE INCIDENT HAVE ANYTHING TO DO WITH JEANNE AND PIERRE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0155-20081116-pfp-b0070, best cost 848.856 + 10377.2 = 11226 over 263 frames.
+anonymous0155-20081116-pfp-b0070 THERE WAS NO CHANCE TO FIRE WITHOUT HITTING HIM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0155-20081116-pfp-b0071, best cost 755.29 + 10341.9 = 11097.2 over 245 frames.
+anonymous0155-20081116-pfp-b0071 THERE WAS NO ANSWER FROM THE OTHER SIDE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0155-20081116-pfp-b0072, best cost 959.115 + 13147.4 = 14106.5 over 314 frames.
+anonymous0155-20081116-pfp-b0072 THEN HE HASTENED ON AS PIERRE HAD GUIDED HIM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0155-20081116-pfp-b0073, best cost 1249.73 + 18447.7 = 19697.4 over 433 frames.
+anonymous0155-20081116-pfp-b0073 WITH THESE ARGUMENTS HE CONVINCED HIMSELF THAT HE SHOULD GO ON ALONE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0208-20090606-yyv-rp-15, best cost 853.168 + 15636.7 = 16489.9 over 356 frames.
+anonymous0208-20090606-yyv-rp-15 THE NORSEMEN CONSIDERED THE RAINBOW AS A BRIDGE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0208-20090606-yyv-rp-16, best cost 1481.55 + 20316.2 = 21797.7 over 450 frames.
+anonymous0208-20090606-yyv-rp-16 AS A WHICH THE GODS PASSED FROM EARTH TO THAT HIM IN THE SKY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0208-20090606-yyv-rp-17, best cost 976.751 + 19099.3 = 20076 over 484 frames.
+anonymous0208-20090606-yyv-rp-17 OTHERS HAVE TRIED TO EXPLAIN THE PHENOMENON PHYSICALLY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0208-20090606-yyv-rp-18, best cost 875.188 + 15403 = 16278.2 over 339 frames.
+anonymous0208-20090606-yyv-rp-18 ARISTOTLE THOUGHT OF THE RAINBOW WAS CAUSED BY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0208-20090606-yyv-rp-19, best cost 858.168 + 13093.2 = 13951.3 over 314 frames.
+anonymous0208-20090606-yyv-rp-19 REFLECTION OF THE SUN'S RAYS BY THE RAIN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0208-20090606-yyv-rp-20, best cost 1035.47 + 16436 = 17471.5 over 373 frames.
+anonymous0208-20090606-yyv-rp-20 SINCE THEN PHYSICISTS HAVE FOUND THAT IT WAS NOT REFLECTION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0208-20090606-yyv-rp-21, best cost 1290.28 + 19844.8 = 21135.1 over 476 frames.
+anonymous0208-20090606-yyv-rp-21 BUT REFRACTION BY THE RAINDROPS WHICH CLOSE SAYS THE RAINBOWS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0208-20090606-yyv-rp-22, best cost 977.185 + 22014 = 22991.1 over 561 frames.
+anonymous0208-20090606-yyv-rp-22 MANY COMPLICATED IDEAS ABOUT THE RAINBOW HAVE BEEN FORMED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0208-20090606-yyv-rp-23, best cost 1184.81 + 21346.7 = 22531.5 over 467 frames.
+anonymous0208-20090606-yyv-rp-23 THE DIFFERENCE IN THE RAINBOW DEPENDS CONSIDERABLY UPON THE SIZE OF THE DROPS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0208-20090606-yyv-rp-24, best cost 1475.84 + 26122 = 27597.8 over 621 frames.
+anonymous0208-20090606-yyv-rp-24 AND THE WAIT FOR THE COLORED BAND INCREASES AS SIZE THE DROPS INCREASES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0226-20090711-zoe-b0264, best cost 750.105 + 14707 = 15457.1 over 348 frames.
+anonymous0226-20090711-zoe-b0264 BUT THIS TIME WAS SAXON WHO REBELLED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0226-20090711-zoe-b0265, best cost 1077.36 + 16668.2 = 17745.6 over 336 frames.
+anonymous0226-20090711-zoe-b0265 I WAS NOT TO CRY OUT IN THE FACE OF FEAR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0226-20090711-zoe-b0266, best cost 892.14 + 15898.6 = 16790.8 over 361 frames.
+anonymous0226-20090711-zoe-b0266 AND NOW PUT YOURSELF IN MY PLACE FOR A MOMENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0226-20090711-zoe-b0267, best cost 787.966 + 15870.2 = 16658.2 over 336 frames.
+anonymous0226-20090711-zoe-b0267 THE BOY THREW BACK HIS HEAD WITH PRIDE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0226-20090711-zoe-b0268, best cost 683.593 + 16595.3 = 17278.9 over 361 frames.
+anonymous0226-20090711-zoe-b0268 SAXON NODDED AND THE BOY FROWNED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0226-20090711-zoe-b0269, best cost 896.37 + 19600 = 20496.3 over 436 frames.
+anonymous0226-20090711-zoe-b0269 WHY NOT LIKE ANY RAILROAD STATION OR FERRY DEPOT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0226-20090711-zoe-b0270, best cost 663.938 + 15327.4 = 15991.3 over 336 frames.
+anonymous0226-20090711-zoe-b0270 WE COULD THROW STONES WITH THEIR FEET 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0226-20090711-zoe-b0271, best cost 1017.14 + 19740.5 = 20757.6 over 398 frames.
+anonymous0226-20090711-zoe-b0271 IT WAS PUT TOGETHER IN A CASUAL HELTER SKELTER SORT AWAY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0226-20090711-zoe-b0272, best cost 1055.86 + 18199.4 = 19255.3 over 411 frames.
+anonymous0226-20090711-zoe-b0272 THESE WERE MERELY STOUT STICKS AN INCH OR SO IN DIAMETER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0226-20090711-zoe-b0273, best cost 829.478 + 14902.2 = 15731.6 over 348 frames.
+anonymous0226-20090711-zoe-b0273 THEN IT WAS THAT A STRANGE THING HAPPENED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0325-20091220-ijn-rp-13, best cost 1011.95 + 18684.6 = 19696.6 over 467 frames.
+anonymous0325-20091220-ijn-rp-13 THE GREEKS USED TO IMAGINE THAT IT WAS A SIGN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0325-20091220-ijn-rp-14, best cost 1054.83 + 17599.5 = 18654.4 over 450 frames.
+anonymous0325-20091220-ijn-rp-14 FROM THE GODS TO FORETELL WAR ON HEAVY RAIN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0325-20091220-ijn-rp-15, best cost 873.71 + 15332.1 = 16205.8 over 416 frames.
+anonymous0325-20091220-ijn-rp-15 THE NORSEMEN CONSIDERED THE RAINBOW AS A BRIDGE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0325-20091220-ijn-rp-16, best cost 1166.48 + 16977.6 = 18144.1 over 420 frames.
+anonymous0325-20091220-ijn-rp-16 THE GODS PASSED FROM EARTH TO THEIR HOME IN THE SKY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0325-20091220-ijn-rp-17, best cost 1319.23 + 21373 = 22692.2 over 519 frames.
+anonymous0325-20091220-ijn-rp-17 OTHERS HAVE TRIED TO EXPLAIN THE PHENOMENON FIT PHYSICALLY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0325-20091220-ijn-rp-18, best cost 996.851 + 15395.9 = 16392.7 over 388 frames.
+anonymous0325-20091220-ijn-rp-18 ARISTOTLE THOUGHT THAT THE RAINBOW WAS CAUSED BY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0325-20091220-ijn-rp-19, best cost 658.778 + 8956.61 = 9615.39 over 238 frames.
+anonymous0325-20091220-ijn-rp-19 THE SUN'S RAYS BY THE RAIN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0325-20091220-ijn-rp-20, best cost 1002.95 + 14957.1 = 15960.1 over 337 frames.
+anonymous0325-20091220-ijn-rp-20 THEN PHYSICISTS HAVE FOUND THAT IT IS NOT REFLECTION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0325-20091220-ijn-rp-21, best cost 1115.52 + 22665.6 = 23781.1 over 566 frames.
+anonymous0325-20091220-ijn-rp-21 REFRACTION BY THE RAINDROPS WHICH CAUSES THE RAINBOWS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0325-20091220-ijn-rp-22, best cost 1024.61 + 16541.9 = 17566.6 over 382 frames.
+anonymous0325-20091220-ijn-rp-22 MANY COMPLICATED IDEAS ABOUT THE RAINBOWS HAVE BEEN FORMED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0371-20100203-ssd-a0541, best cost 747.554 + 13689.2 = 14436.8 over 373 frames.
+anonymous0371-20100203-ssd-a0541 THE WARDEN WITH A QUART OF CHAMPAGNE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0371-20100203-ssd-a0542, best cost 1054.26 + 17556.1 = 18610.4 over 461 frames.
+anonymous0371-20100203-ssd-a0542 WITHOUT A DOUBT SOME OF THEM HAVE DINNER ENGAGEMENTS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0371-20100203-ssd-a0543, best cost 1041.34 + 24432.6 = 25473.9 over 573 frames.
+anonymous0371-20100203-ssd-a0543 I'VE BEEN BORN WITH NO ORGANIC CHEMICAL PREDISPOSITION TOWARD ALCOHOL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0371-20100203-ssd-a0544, best cost 817.224 + 14711.1 = 15528.3 over 411 frames.
+anonymous0371-20100203-ssd-a0544 HE MAY ANTICIPATE THE DAY OF HIS DEATH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0371-20100203-ssd-a0545, best cost 768.74 + 16484.4 = 17253.1 over 448 frames.
+anonymous0371-20100203-ssd-a0545 THE ITALIAN RANCHO WAS A BACHELOR ESTABLISHMENT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0371-20100203-ssd-a0546, best cost 1132.49 + 20623.2 = 21755.7 over 548 frames.
+anonymous0371-20100203-ssd-a0546 I LOST MY BALANCE AND PITCHED HEAD FOREMOST INTO THE OOZE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0371-20100203-ssd-a0547, best cost 1090.49 + 21798.8 = 22889.3 over 548 frames.
+anonymous0371-20100203-ssd-a0547 MEN LIKE JOE GOOSE DATED EXISTENCE FROM DRUNK TO DRUNK 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0371-20100203-ssd-a0548, best cost 988.02 + 17441.6 = 18429.6 over 486 frames.
+anonymous0371-20100203-ssd-a0548 ALSO CHURCHES AND PREACHERS I HAD NEVER KNOWN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0371-20100203-ssd-a0549, best cost 1041 + 15839.9 = 16880.9 over 498 frames.
+anonymous0371-20100203-ssd-a0549 YOU KNOW THAT WE WEIGH EVERY POUND OF COAL WE BURN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0371-20100203-ssd-a0550, best cost 929.194 + 15125.7 = 16054.9 over 436 frames.
+anonymous0371-20100203-ssd-a0550 THIS ALSO BECAME PART OF THE DAILY SCHEDULE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0434-20100505-bxv-b0080, best cost 847.77 + 19037.1 = 19884.9 over 461 frames.
+anonymous0434-20100505-bxv-b0080 TOMORROW BE STRONG ENOUGH TO STAND UPON 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0434-20100505-bxv-b0081, best cost 1096.8 + 21065.3 = 22162.1 over 561 frames.
+anonymous0434-20100505-bxv-b0081 YOU'RE GOING TO LEAVE AFTER YOU SAW ME ON THE ROCK 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0434-20100505-bxv-b0082, best cost 1177.99 + 23410.8 = 24588.8 over 586 frames.
+anonymous0434-20100505-bxv-b0082 HE BIT HIS TONGUE AND CURSED HIMSELF AT THIS FRESH BREAK 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0434-20100505-bxv-b0083, best cost 998.887 + 20985.1 = 21984 over 561 frames.
+anonymous0434-20100505-bxv-b0083 IN A THERE WAS SOMETHING THAT WAS ALMOST TRAGEDY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0434-20100505-bxv-b0084, best cost 774.635 + 14519.5 = 15294.1 over 398 frames.
+anonymous0434-20100505-bxv-b0084 YOUR FACE IS RED WITH BLOOD 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0434-20100505-bxv-b0085, best cost 1197.87 + 20135.9 = 21333.8 over 511 frames.
+anonymous0434-20100505-bxv-b0085 HER EYES SMILED TRUTH AT HIM AS HE CAME UP THE BANK 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0434-20100505-bxv-b0086, best cost 627.022 + 13302.9 = 13929.9 over 373 frames.
+anonymous0434-20100505-bxv-b0086 HE CAN CARE FOR HIMSELF 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0434-20100505-bxv-b0087, best cost 1010.37 + 19109.9 = 20120.3 over 486 frames.
+anonymous0434-20100505-bxv-b0087 THEY WILL SEARCH FOR US BETWEEN THEIR CAMP AND CHURCHILL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0434-20100505-bxv-b0088, best cost 680.936 + 16065.3 = 16746.2 over 423 frames.
+anonymous0434-20100505-bxv-b0088 UNTIL I DIE HE EXCLAIMED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0434-20100505-bxv-b0089, best cost 979.141 + 18143.9 = 19123 over 448 frames.
+anonymous0434-20100505-bxv-b0089 HER BEAUTIFUL HAIR WAS DONE UP IN SHINING COILS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0541-20100821-gbt-b0459, best cost 650.013 + 16533.8 = 17183.8 over 398 frames.
+anonymous0541-20100821-gbt-b0459 THEY ARE NOT BIOLOGISTS NOR SOCIOLOGISTS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0541-20100821-gbt-b0460, best cost 1184.69 + 23072.3 = 24257 over 586 frames.
+anonymous0541-20100821-gbt-b0460 THE MORE HIS OPPONENTS GREW EXCITED THE MORE ERNEST DELIBERATELY EXCITED THEM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0541-20100821-gbt-b0461, best cost 1064.85 + 18458.6 = 19523.4 over 486 frames.
+anonymous0541-20100821-gbt-b0461 BY VIRTUE OF THAT POWER WE SHALL REMAIN IN POWER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0541-20100821-gbt-b0462, best cost 744.094 + 14028.2 = 14772.3 over 386 frames.
+anonymous0541-20100821-gbt-b0462 ONE GUESS WILL DO ERNEST RETORTED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0541-20100821-gbt-b0463, best cost 840.861 + 13139.7 = 13980.5 over 386 frames.
+anonymous0541-20100821-gbt-b0463 TAKE MY ADVICE AND ACCEPT THE VACATION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0541-20100821-gbt-b0464, best cost 851.665 + 11443.3 = 12295 over 348 frames.
+anonymous0541-20100821-gbt-b0464 I COULD NOT AGREE MORE WITH ERNEST 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0541-20100821-gbt-b0465, best cost 952.293 + 15561.1 = 16513.4 over 441 frames.
+anonymous0541-20100821-gbt-b0465 BUT SUCH DIVERGENCE OF NO MENACE TO SOCIETY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0541-20100821-gbt-b0466, best cost 977.603 + 17420.7 = 18398.3 over 636 frames.
+anonymous0541-20100821-gbt-b0466 IT IS DOG EAT DOG AND YOU ATE THEM UP 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0541-20100821-gbt-b0467, best cost 677.624 + 10237.8 = 10915.4 over 298 frames.
+anonymous0541-20100821-gbt-b0467 LET US RUN FOR OURSELVES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0541-20100821-gbt-b0468, best cost 820.124 + 21273.9 = 22094 over 498 frames.
+anonymous0541-20100821-gbt-b0468 IT WAS INTRODUCED BY REPRESENTATIVE DICK OF OHIO 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0615-20110112-ahi-b0036, best cost 718.571 + 17740.9 = 18459.4 over 473 frames.
+anonymous0615-20110112-ahi-b0036 HE WONDERED TOO WHERE ROSCOE WAS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0615-20110112-ahi-b0037, best cost 889.878 + 17256.4 = 18146.2 over 473 frames.
+anonymous0615-20110112-ahi-b0037 PHILIP KNEW THAT SHE WAS NOT AN INDIAN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0615-20110112-ahi-b0038, best cost 1153.45 + 22879 = 24032.4 over 561 frames.
+anonymous0615-20110112-ahi-b0038 IN HER HASTE TO GET AWAY SHE HAD FORGOTTEN THESE THINGS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0615-20110112-ahi-b0039, best cost 1237.94 + 23770.3 = 25008.2 over 536 frames.
+anonymous0615-20110112-ahi-b0039 PHILIP TOOK A STEP TOWARD GREGSON HALF DETERMINED TO AWAKEN HIM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0615-20110112-ahi-b0040, best cost 724.869 + 14860.1 = 15585 over 386 frames.
+anonymous0615-20110112-ahi-b0040 THE THOUGHT SET HIS BLOOD TINGLING 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0615-20110112-ahi-b0041, best cost 955.604 + 17159.9 = 18115.5 over 448 frames.
+anonymous0615-20110112-ahi-b0041 BUT IF PIERRE DID NOT RETURN UNTIL TOMORROW 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0615-20110112-ahi-b0042, best cost 1173.11 + 22429.1 = 23602.2 over 536 frames.
+anonymous0615-20110112-ahi-b0042 TEN MINUTES HAD NOT ELAPSED SINCE HE HAD DROPPED THE HANDKERCHIEF 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0615-20110112-ahi-b0043, best cost 754.591 + 12073.4 = 12828 over 348 frames.
+anonymous0615-20110112-ahi-b0043 IT WON'T BE FOR SELL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0615-20110112-ahi-b0044, best cost 893.654 + 15192.9 = 16086.6 over 386 frames.
+anonymous0615-20110112-ahi-b0044 FOR A FEW MOMENTS HE ATE IN SILENCE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0615-20110112-ahi-b0045, best cost 750.264 + 16872.9 = 17623.1 over 436 frames.
+anonymous0615-20110112-ahi-b0045 PHILIP DID NOT PURSUE THE SUBJECT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0762-20111028-uvj-b0002, best cost 1181.78 + 20533.9 = 21715.7 over 661 frames.
+anonymous0762-20111028-uvj-b0002 YOU GOT OUT BY FIGHTING AND I THROUGH A PRETTY GIRL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0762-20111028-uvj-b0003, best cost 676.996 + 13556.8 = 14233.8 over 436 frames.
+anonymous0762-20111028-uvj-b0003 I CAN SEE THAT KNIFE NOW 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0762-20111028-uvj-b0004, best cost 1158.41 + 20028.4 = 21186.9 over 586 frames.
+anonymous0762-20111028-uvj-b0004 WHEN I CAN'T SEE BEAUTY IN WOMAN I WANT TO DIE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0762-20111028-uvj-b0005, best cost 876.1 + 22407.6 = 23283.7 over 686 frames.
+anonymous0762-20111028-uvj-b0005 HIS SLIM FINGERS CLOSED LIKE STEEL ABOUT PHILIP'S 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0762-20111028-uvj-b0006, best cost 1199.74 + 19252.9 = 20452.6 over 611 frames.
+anonymous0762-20111028-uvj-b0006 HE SEIZED GREGSON BY THE ARM AND LED HIM TO THE DOOR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0762-20111028-uvj-b0007, best cost 890.897 + 18300 = 19190.9 over 636 frames.
+anonymous0762-20111028-uvj-b0007 HERE THE INDIAN DOGS WAILING DOWN AT CHURCHILL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0762-20111028-uvj-b0008, best cost 1046.68 + 21607.8 = 22654.5 over 648 frames.
+anonymous0762-20111028-uvj-b0008 BURKE HIMSELF HAD CRITICIZED IT BECAUSE OF THE SMILE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0762-20111028-uvj-b0009, best cost 1030.28 + 19087.1 = 20117.4 over 611 frames.
+anonymous0762-20111028-uvj-b0009 I'D SAY THERE WAS GOING TO BE A GLORIOUS SCRAP 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0762-20111028-uvj-b0010, best cost 1057.65 + 20445.3 = 21502.9 over 661 frames.
+anonymous0762-20111028-uvj-b0010 HE TURNED THE MAP TO GREGSON POINTING WITH HIS FINGER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0762-20111028-uvj-b0011, best cost 1162.32 + 25825.5 = 26987.8 over 798 frames.
+anonymous0762-20111028-uvj-b0011 HIS EYES NEVER TOOK THEMSELVES FOR AN INSTANT FROM HIS COMPANION'S FACE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0890-20120430-tej-b0051, best cost 1164.95 + 18417.3 = 19582.3 over 473 frames.
+anonymous0890-20120430-tej-b0051 THE SIXTH DAY HE SPENT IN A CABIN WITH GREGSON 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0890-20120430-tej-b0052, best cost 754.002 + 13244.1 = 13998.1 over 361 frames.
+anonymous0890-20120430-tej-b0052 THE FLUSH WAS GONE FROM HER FACE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0890-20120430-tej-b0053, best cost 939.842 + 19220.2 = 20160 over 523 frames.
+anonymous0890-20120430-tej-b0053 THAT IS WHY I AM AM RATTLED HE LAUGHED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0890-20120430-tej-b0054, best cost 826.648 + 17628.6 = 18455.2 over 461 frames.
+anonymous0890-20120430-tej-b0054 HE UNDERSTOOD THE MEANING OF THE LOOK 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0890-20120430-tej-b0055, best cost 1187.29 + 21016.5 = 22203.8 over 548 frames.
+anonymous0890-20120430-tej-b0055 SHE WAS EVEN MORE BEAUTIFUL THAN WHEN I SAW HER BEFORE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0890-20120430-tej-b0056, best cost 1071.89 + 20535.3 = 21607.2 over 511 frames.
+anonymous0890-20120430-tej-b0056 I'LL GIVE A THOUSAND IF YOU PRODUCE HER RETORTED GREGSON 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0890-20120430-tej-b0057, best cost 905.929 + 20403.8 = 21309.7 over 523 frames.
+anonymous0890-20120430-tej-b0057 THEY HAVE WON POPULAR SENTIMENT THROUGH THE NEWSPAPERS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0890-20120430-tej-b0058, best cost 661.173 + 17125.1 = 17786.3 over 473 frames.
+anonymous0890-20120430-tej-b0058 WE MUST ACHIEVE OUR OWN SALVATION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0890-20120430-tej-b0059, best cost 923.503 + 19306.5 = 20230 over 486 frames.
+anonymous0890-20120430-tej-b0059 IN MOMENTS OF MENTAL ENERGY PHILIP WAS RESTLESS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0890-20120430-tej-b0060, best cost 1307.28 + 21576.9 = 22884.2 over 561 frames.
+anonymous0890-20120430-tej-b0060 HE WOULD KEEP HIS FAITH WITH GREGSON FOR THE PROMISED DAY OR TWO 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0913-20120609-kgq-a0168, best cost 1155.04 + 19933.2 = 21088.3 over 498 frames.
+anonymous0913-20120609-kgq-a0168 LOW BUSH WHIPPED HIM IN THE FACE AND LEFT MISTAKE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0913-20120609-kgq-a0169, best cost 962.037 + 18040.1 = 19002.1 over 461 frames.
+anonymous0913-20120609-kgq-a0169 SUDDENLY JOURNEY STOPPED FOR AN INSTANT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0913-20120609-kgq-a0170, best cost 1079.25 + 19880.9 = 20960.2 over 536 frames.
+anonymous0913-20120609-kgq-a0170 THERE WAS NONE OF THE JOY OF MEETING HIS FACE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0913-20120609-kgq-a0171, best cost 1077.38 + 20768.2 = 21845.6 over 536 frames.
+anonymous0913-20120609-kgq-a0171 AND WHEN YOU COME BACK AND FEW DAYS BRING EILEEN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0913-20120609-kgq-a0172, best cost 842.165 + 21116.8 = 21959 over 548 frames.
+anonymous0913-20120609-kgq-a0172 GREGSON HAD LEFT THE OUTER DOOR SLIGHTLY AJAR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0913-20120609-kgq-a0173, best cost 788.9 + 18248.8 = 19037.7 over 473 frames.
+anonymous0913-20120609-kgq-a0173 THE DATE WAS NEARLY EIGHTEEN YEARS OLD 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0913-20120609-kgq-a0174, best cost 1034.28 + 13902 = 14936.3 over 373 frames.
+anonymous0913-20120609-kgq-a0174 THEY WERE THE PRE STAGE OF STORM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0913-20120609-kgq-a0175, best cost 1023.17 + 18069.8 = 19092.9 over 486 frames.
+anonymous0913-20120609-kgq-a0175 DOWN THAT THE EARTH WAS ALREADY SWELLING WITH MY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0913-20120609-kgq-a0176, best cost 1228.59 + 19616.6 = 20845.2 over 486 frames.
+anonymous0913-20120609-kgq-a0176 FOR THE FIRST TIME IN HIS LIFE HE WAS YEARNING FOR A SCRAP 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0913-20120609-kgq-a0177, best cost 730.372 + 18891.4 = 19621.8 over 498 frames.
+anonymous0913-20120609-kgq-a0177 SHE HAD BEEN THOROUGHLY AND EFFICIENTLY MAULED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0989-20121113-jbs-a0361, best cost 1076.8 + 23815.9 = 24892.8 over 636 frames.
+anonymous0989-20121113-jbs-a0361 BUT HE DID NOT BROACH IT PREFERRING TO MATURE IT CAREFULLY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0989-20121113-jbs-a0362, best cost 627.09 + 14303.4 = 14930.5 over 411 frames.
+anonymous0989-20121113-jbs-a0362 NOPE NOT THE SLIGHTEST IDEA 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0989-20121113-jbs-a0363, best cost 874.265 + 16843.5 = 17717.8 over 461 frames.
+anonymous0989-20121113-jbs-a0363 IT IS NOT AN ATTEMPT TO SMASH THE MARKET 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0989-20121113-jbs-a0364, best cost 1155.9 + 21446.9 = 22602.8 over 561 frames.
+anonymous0989-20121113-jbs-a0364 WE HAVE PLENTY OF CAPITAL OURSELVES AND YET WE WANT MORE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0989-20121113-jbs-a0365, best cost 754.391 + 18206.1 = 18960.5 over 486 frames.
+anonymous0989-20121113-jbs-a0365 THESE RUMORS MAY EVEN ORIGINATE WITH US 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0989-20121113-jbs-a0366, best cost 1217.81 + 28195.8 = 29413.6 over 748 frames.
+anonymous0989-20121113-jbs-a0366 A WILDLY EXCITING TIME WAS HIS DURING THE WEEK PRECEDING THURSDAY 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0989-20121113-jbs-a0367, best cost 1060.85 + 20392.1 = 21453 over 598 frames.
+anonymous0989-20121113-jbs-a0367 THERE IS NOT AN IOTA OF TRUTH IN IT CERTAINLY NOT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0989-20121113-jbs-a0368, best cost 1251.13 + 27588.7 = 28839.9 over 723 frames.
+anonymous0989-20121113-jbs-a0368 I JUST DO APPRECIATE IT WITHOUT BEING ABLE TO EXPRESS MY FAVOR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0989-20121113-jbs-a0369, best cost 1102.62 + 28355.1 = 29457.7 over 773 frames.
+anonymous0989-20121113-jbs-a0369 IN PARTNERSHIP WITH DAYLIGHT THE PAIR RAIDED THE SAN JOSE INTERURBAN 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous0989-20121113-jbs-a0370, best cost 970.881 + 18421.6 = 19392.4 over 536 frames.
+anonymous0989-20121113-jbs-a0370 HE SAW ALL MEN IN THE BUSINESS GAME DOING THIS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1023-20130123-jta-b0013, best cost 1013.68 + 23856.5 = 24870.2 over 623 frames.
+anonymous1023-20130123-jta-b0013 LAKES AND RIVERS HUNDREDS OF THEM THOUSANDS OF THEM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1023-20130123-jta-b0014, best cost 739.434 + 23140.9 = 23880.4 over 586 frames.
+anonymous1023-20130123-jta-b0014 WHITEFISH GREGSON WHITEFISH AND TROUT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1023-20130123-jta-b0015, best cost 742.572 + 16152.5 = 16895 over 423 frames.
+anonymous1023-20130123-jta-b0015 THEY ROBBED ME A FEW YEARS LATER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1023-20130123-jta-b0016, best cost 1069.91 + 21860.8 = 22930.7 over 511 frames.
+anonymous1023-20130123-jta-b0016 HE CHUCKLED AS HE PULLED OUT HIS PIPE AND BEGAN FILLING IT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1023-20130123-jta-b0017, best cost 927.262 + 21197.1 = 22124.4 over 523 frames.
+anonymous1023-20130123-jta-b0017 EVERYTHING WAS WORKING SMOOTHLY BETTER THAN I HAD EXPECTED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1023-20130123-jta-b0018, best cost 715.829 + 16614 = 17329.8 over 436 frames.
+anonymous1023-20130123-jta-b0018 I WAS COMPLETELY LOST IN MY WORK 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1023-20130123-jta-b0019, best cost 889.973 + 17532.1 = 18422 over 436 frames.
+anonymous1023-20130123-jta-b0019 HIS SLIM HANDS GRIPPED THE EDGES OF THE TABLE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1023-20130123-jta-b0020, best cost 1128.88 + 19980.5 = 21109.4 over 498 frames.
+anonymous1023-20130123-jta-b0020 HE MADE NO REPLY AS HE WAITED FOR WHITTEMORE TO CONTINUE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1023-20130123-jta-b0021, best cost 665.377 + 16179.2 = 16844.6 over 411 frames.
+anonymous1023-20130123-jta-b0021 PHILIP DROPPED BACK INTO HIS CHAIR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1023-20130123-jta-b0022, best cost 1065.67 + 18153.6 = 19219.2 over 461 frames.
+anonymous1023-20130123-jta-b0022 IF I WAS OUT OF THE GAME IT WOULD BE EASILY MADE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1116-20131221-urh-a0038, best cost 672.388 + 14071.5 = 14743.9 over 336 frames.
+anonymous1116-20131221-urh-a0038 WE'LL HAVE TO WATCH OUR CHANCES 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1116-20131221-urh-a0039, best cost 1096.69 + 18982.7 = 20079.4 over 473 frames.
+anonymous1116-20131221-urh-a0039 THE SHIP SHOULD BE IN WITHIN A WEEK OR TEN DAYS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1116-20131221-urh-a0040, best cost 1013.39 + 19733.2 = 20746.6 over 498 frames.
+anonymous1116-20131221-urh-a0040 I SUPPOSE YOU WONDER WHY SHE IS COMING UP HIM 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1116-20131221-urh-a0041, best cost 859.549 + 17577.8 = 18437.3 over 448 frames.
+anonymous1116-20131221-urh-a0041 MEANWHILE I'LL GO OUT TO BREATHE A SPELL 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1116-20131221-urh-a0042, best cost 975.611 + 18519.2 = 19494.8 over 461 frames.
+anonymous1116-20131221-urh-a0042 HOW COULD HE EXPLAIN HIS POSSESSION OF THE SKETCH 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1116-20131221-urh-a0043, best cost 1275.79 + 24577 = 25852.8 over 561 frames.
+anonymous1116-20131221-urh-a0043 IT SEEMED NEARER TO HIM SINCE HE HAD SEEN AND TALKED WITH GREGSON 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1116-20131221-urh-a0044, best cost 1086.12 + 22423 = 23509.1 over 536 frames.
+anonymous1116-20131221-urh-a0044 HER OWN BETRAYAL OF HERSELF WAS LIKE TONIC TO PHILIP 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1116-20131221-urh-a0045, best cost 951.243 + 17420.5 = 18371.7 over 448 frames.
+anonymous1116-20131221-urh-a0045 HE MOVED AWAY AS QUIETLY AS HE HAD COME 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1116-20131221-urh-a0046, best cost 1077.46 + 22181 = 23258.5 over 561 frames.
+anonymous1116-20131221-urh-a0046 THE GIRL FACED HIM HER EYES SHINING WITH SUDDEN FEAR 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1116-20131221-urh-a0047, best cost 1085.93 + 24850.7 = 25936.7 over 623 frames.
+anonymous1116-20131221-urh-a0047 CLOSE BESIDE HIM GLEAMED THE WHITE FANGS OF THE WOLF DOG 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1184-20150109-mlr-b0174, best cost 1469.2 + 29511.2 = 30980.4 over 673 frames.
+anonymous1184-20150109-mlr-b0174 HATRED AND MURDER LAST FOR REVENGE THEY POSSESSED FOR OVERFLOWING 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1184-20150109-mlr-b0175, best cost 679.898 + 18686.6 = 19366.5 over 436 frames.
+anonymous1184-20150109-mlr-b0175 SHELDON GLANCED AT THE THERMOMETER 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1184-20150109-mlr-b0176, best cost 731.853 + 15357.3 = 16089.2 over 373 frames.
+anonymous1184-20150109-mlr-b0176 I'LL SEE TO POOR HUGHIE 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1184-20150109-mlr-b0177, best cost 1288.54 + 28220.7 = 29509.2 over 573 frames.
+anonymous1184-20150109-mlr-b0177 HER GRAY EYES WERE FLASHING AND HER LIPS OVERT QUIVERING 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1184-20150109-mlr-b0178, best cost 536.543 + 15384.1 = 15920.6 over 336 frames.
+anonymous1184-20150109-mlr-b0178 ALSO I WANT INFORMATION 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1184-20150109-mlr-b0179, best cost 920.284 + 18112.7 = 19033 over 398 frames.
+anonymous1184-20150109-mlr-b0179 LET THEM GO OUT AND EAT WITH MY BOYS 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1184-20150109-mlr-b0180, best cost 767.889 + 18392 = 19159.9 over 423 frames.
+anonymous1184-20150109-mlr-b0180 I I BEG PARDON HE DRAWLED 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1184-20150109-mlr-b0181, best cost 1008.01 + 25759.4 = 26767.4 over 536 frames.
+anonymous1184-20150109-mlr-b0181 AND YOU PREFERRED A CANNIBAL ISLE AND A CARTRIDGE BELT 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1184-20150109-mlr-b0182, best cost 827.842 + 17487.5 = 18315.3 over 398 frames.
+anonymous1184-20150109-mlr-b0182 I WAS A NEW YORK WHEN THE CRASH CAME 
+LOG (lattice-best-path:main():lattice-best-path.cc:99) For utterance anonymous1184-20150109-mlr-b0183, best cost 734.427 + 20184.7 = 20919.1 over 473 frames.
+anonymous1184-20150109-mlr-b0183 NO I DID NOT FALL AMONG THIEVES 
+LOG (lattice-best-path:main():lattice-best-path.cc:124) Overall score per frame is 42.3463 = 2.14917 [graph] + 40.1972 [acoustic] over 100537 frames.
+LOG (lattice-best-path:main():lattice-best-path.cc:128) Done 220 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sun Nov 26 12:56:50 IST 2017, elapsed time 0 seconds

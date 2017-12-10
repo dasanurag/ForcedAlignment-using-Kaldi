@@ -1,0 +1,26 @@
+# acc-tree-stats --ci-phones=1:2:3:4:5 exp/tri3b_ali/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/2/utt2spk scp:data/train/split2/2/cmvn.scp scp:data/train/split2/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3b_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split2/2/utt2spk ark,s,cs:exp/tri3b_ali/trans.2 ark:- ark:- |" "ark:gunzip -c exp/tri3b_ali/ali.2.gz|" exp/sgmm2_4a/2.treeacc 
+# Started at Sun Nov 26 07:18:02 IST 2017
+#
+acc-tree-stats --ci-phones=1:2:3:4:5 exp/tri3b_ali/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/2/utt2spk scp:data/train/split2/2/cmvn.scp scp:data/train/split2/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3b_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split2/2/utt2spk ark,s,cs:exp/tri3b_ali/trans.2 ark:- ark:- |' 'ark:gunzip -c exp/tri3b_ali/ali.2.gz|' exp/sgmm2_4a/2.treeacc 
+splice-feats ark:- ark:- 
+transform-feats exp/tri3b_ali/final.mat ark:- ark:- 
+transform-feats --utt2spk=ark:data/train/split2/2/utt2spk ark,s,cs:exp/tri3b_ali/trans.2 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split2/2/utt2spk scp:data/train/split2/2/cmvn.scp scp:data/train/split2/2/feats.scp ark:- 
+LOG (acc-tree-stats:main():acc-tree-stats.cc:132) Processed 1000 utterances.
+LOG (acc-tree-stats:main():acc-tree-stats.cc:132) Processed 2000 utterances.
+LOG (acc-tree-stats:main():acc-tree-stats.cc:132) Processed 3000 utterances.
+LOG (acc-tree-stats:main():acc-tree-stats.cc:132) Processed 4000 utterances.
+LOG (acc-tree-stats:main():acc-tree-stats.cc:132) Processed 5000 utterances.
+LOG (acc-tree-stats:main():acc-tree-stats.cc:132) Processed 6000 utterances.
+LOG (acc-tree-stats:main():acc-tree-stats.cc:132) Processed 7000 utterances.
+LOG (acc-tree-stats:main():acc-tree-stats.cc:132) Processed 8000 utterances.
+LOG (acc-tree-stats:main():acc-tree-stats.cc:132) Processed 9000 utterances.
+LOG (apply-cmvn:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 10002 utterances, errors on 0
+LOG (transform-feats:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -95.361 over 5.34421e+06 frames.
+LOG (transform-feats:main():transform-feats.cc:161) Applied transform to 10002 utterances; 0 had errors.
+LOG (transform-feats:main():transform-feats.cc:158) Overall average logdet is 4.0586 over 5.34421e+06 frames.
+LOG (transform-feats:main():transform-feats.cc:161) Applied transform to 10002 utterances; 0 had errors.
+LOG (acc-tree-stats:main():acc-tree-stats.cc:149) Accumulated stats for 9976 files, 26 failed due to no alignment, 0 failed for other reasons.
+LOG (acc-tree-stats:main():acc-tree-stats.cc:152) Number of separate stats (context-dependent states) is 49445
+# Accounting: time=26 threads=1
+# Ended (code 0) at Sun Nov 26 07:18:28 IST 2017, elapsed time 26 seconds

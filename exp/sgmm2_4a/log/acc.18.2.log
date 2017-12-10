@@ -1,0 +1,236 @@
+# sgmm2-acc-stats --spk-vecs=ark:exp/sgmm2_4a/vecs.2 --utt2spk=ark:data/train/split2/2/utt2spk --update-flags=vMwSctu "--gselect=ark,s,cs:gunzip -c exp/sgmm2_4a/gselect.2.gz|" --rand-prune=0.1 exp/sgmm2_4a/18.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/2/utt2spk scp:data/train/split2/2/cmvn.scp scp:data/train/split2/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3b_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split2/2/utt2spk ark,s,cs:exp/tri3b_ali/trans.2 ark:- ark:- |" "ark,s,cs:gunzip -c exp/sgmm2_4a/ali.2.gz | ali-to-post ark:- ark:-|" exp/sgmm2_4a/18.2.acc 
+# Started at Sun Nov 26 11:20:50 IST 2017
+#
+sgmm2-acc-stats --spk-vecs=ark:exp/sgmm2_4a/vecs.2 --utt2spk=ark:data/train/split2/2/utt2spk --update-flags=vMwSctu '--gselect=ark,s,cs:gunzip -c exp/sgmm2_4a/gselect.2.gz|' --rand-prune=0.1 exp/sgmm2_4a/18.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split2/2/utt2spk scp:data/train/split2/2/cmvn.scp scp:data/train/split2/2/feats.scp ark:- | splice-feats  ark:- ark:- | transform-feats exp/tri3b_ali/final.mat ark:- ark:- | transform-feats --utt2spk=ark:data/train/split2/2/utt2spk ark,s,cs:exp/tri3b_ali/trans.2 ark:- ark:- |' 'ark,s,cs:gunzip -c exp/sgmm2_4a/ali.2.gz | ali-to-post ark:- ark:-|' exp/sgmm2_4a/18.2.acc 
+transform-feats exp/tri3b_ali/final.mat ark:- ark:- 
+splice-feats ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train/split2/2/utt2spk scp:data/train/split2/2/cmvn.scp scp:data/train/split2/2/feats.scp ark:- 
+transform-feats --utt2spk=ark:data/train/split2/2/utt2spk ark,s,cs:exp/tri3b_ali/trans.2 ark:- ark:- 
+ali-to-post ark:- ark:- 
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 50 utterances; for utterance anonymous0310-20091105-vgd-b0145 avg. like is -37.3831 over 823 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 100 utterances; for utterance anonymous0317-20091208-rwz-b0025 avg. like is -46.3185 over 498 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 150 utterances; for utterance anonymous0322-20091215-jjn-a0003 avg. like is -36.0238 over 636 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 200 utterances; for utterance anonymous0328-20091220-xjy-a0144 avg. like is -38.6643 over 536 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 250 utterances; for utterance anonymous0334-20091226-rsc-a0510 avg. like is -35.2566 over 661 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance anonymous0337-20091227-sns-rb-08 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 300 utterances; for utterance anonymous0339-20091230-cuj-a0487 avg. like is -40.2866 over 672 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 350 utterances; for utterance anonymous0344-20100106-xov-a0319 avg. like is -34.0479 over 523 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 400 utterances; for utterance anonymous0349-20100121-qfq-rp-01 avg. like is -31.2286 over 448 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 450 utterances; for utterance anonymous0354-20100126-pba-a0195 avg. like is -29.7369 over 461 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 500 utterances; for utterance anonymous0360-20100202-nmn-a0284 avg. like is -35.9313 over 498 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 550 utterances; for utterance anonymous0365-20100203-ccw-a0044 avg. like is -33.7938 over 486 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 600 utterances; for utterance anonymous0370-20100203-snu-b0039 avg. like is -34.5761 over 548 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 650 utterances; for utterance anonymous0376-20100204-oyj-a0121 avg. like is -31.4912 over 561 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 700 utterances; for utterance anonymous0382-20100205-xaw-b0007 avg. like is -29.6613 over 448 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance anonymous0382-20100205-xaw-b0014 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 750 utterances; for utterance anonymous0388-20100208-hoy-b0250 avg. like is -31.5529 over 436 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 800 utterances; for utterance anonymous0393-20100216-kaa-a0126 avg. like is -31.1448 over 536 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 850 utterances; for utterance anonymous0398-20100216-ynn-ar-16 avg. like is -29.0188 over 723 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance anonymous0398-20100216-ynn-ar-18 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 900 utterances; for utterance anonymous0403-20100221-erv-b0359 avg. like is -34.8512 over 423 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 950 utterances; for utterance anonymous0408-20100302-dwg-b0097 avg. like is -31.3377 over 398 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1000 utterances; for utterance anonymous0413-20100311-nos-b0494 avg. like is -30.4041 over 573 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1050 utterances; for utterance anonymous0418-20100316-cns-a0296 avg. like is -34.1082 over 336 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance anonymous0421-20100324-xth-a0337 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1100 utterances; for utterance anonymous0424-20100330-vye-a0545 avg. like is -37.8782 over 511 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1150 utterances; for utterance anonymous0429-20100418-tis-a0350 avg. like is -34.8545 over 623 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1200 utterances; for utterance anonymous0435-20100508-znh-a0547 avg. like is -35.1913 over 948 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1250 utterances; for utterance anonymous0440-20100512-ady-a0182 avg. like is -31.9023 over 573 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1300 utterances; for utterance anonymous0445-20100518-qpt-b0276 avg. like is -30.6062 over 323 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance anonymous0446-20100521-eao-a0086 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1350 utterances; for utterance anonymous0450-20100601-wtj-b0010 avg. like is -30.99 over 753 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1400 utterances; for utterance anonymous0455-20100602-lnl-b0444 avg. like is -32.2714 over 698 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1450 utterances; for utterance anonymous0460-20100602-rhr-b0152 avg. like is -37.6402 over 636 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1500 utterances; for utterance anonymous0465-20100604-qub-b0166 avg. like is -32.9296 over 423 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1550 utterances; for utterance anonymous0470-20100611-gmc-a0193 avg. like is -31.2984 over 573 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1600 utterances; for utterance anonymous0476-20100624-iix-rp-12 avg. like is -39.4705 over 673 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1650 utterances; for utterance anonymous0481-20100703-cvb-b0252 avg. like is -42.711 over 636 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance anonymous0485-20100709-jrq-a0391 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1700 utterances; for utterance anonymous0486-20100709-yip-a0014 avg. like is -38.6736 over 573 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1750 utterances; for utterance anonymous0491-20100712-vcz-a0431 avg. like is -37.8413 over 286 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1800 utterances; for utterance anonymous0496-20100719-vdp-b0436 avg. like is -34.1695 over 411 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1850 utterances; for utterance anonymous0501-20100806-dqo-a0436 avg. like is -32.9522 over 398 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1900 utterances; for utterance anonymous0506-20100811-ezx-a0583 avg. like is -37.7657 over 686 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 1950 utterances; for utterance anonymous0511-20100812-bhx-b0438 avg. like is -37.9968 over 623 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2000 utterances; for utterance anonymous0516-20100820-cnb-ar-02 avg. like is -35.1091 over 583 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2050 utterances; for utterance anonymous0521-20100820-hew-a0134 avg. like is -30.6102 over 411 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2100 utterances; for utterance anonymous0526-20100820-kke-a0044 avg. like is -35.9947 over 636 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2150 utterances; for utterance anonymous0531-20100820-qnp-b0080 avg. like is -37.7123 over 486 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2200 utterances; for utterance anonymous0536-20100821-emq-a0131 avg. like is -40.165 over 473 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2250 utterances; for utterance anonymous0542-20100821-gus-a0092 avg. like is -36.7722 over 611 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2300 utterances; for utterance anonymous0547-20100821-mbm-a0486 avg. like is -38.4381 over 523 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2350 utterances; for utterance anonymous0552-20100821-rez-b0021 avg. like is -42.7152 over 411 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2400 utterances; for utterance anonymous0557-20100821-tub-b0441 avg. like is -39.4652 over 636 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2450 utterances; for utterance anonymous0562-20100821-xmv-a0531 avg. like is -37.828 over 661 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2500 utterances; for utterance anonymous0567-20100828-qtg-a0347 avg. like is -34.2224 over 648 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2550 utterances; for utterance anonymous0572-20101002-qwp-b0160 avg. like is -37.6566 over 673 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2600 utterances; for utterance anonymous0577-20101011-qrd-a0391 avg. like is -40.3853 over 573 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance anonymous0577-20101011-qrd-a0394 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2650 utterances; for utterance anonymous0582-20101029-tkv-b0488 avg. like is -36.7509 over 761 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2700 utterances; for utterance anonymous0588-20101108-asx-a0127 avg. like is -34.8342 over 673 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2750 utterances; for utterance anonymous0593-20101112-hep-b0364 avg. like is -40.8681 over 698 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2800 utterances; for utterance anonymous0598-20101204-aef-a0325 avg. like is -42.1845 over 823 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2850 utterances; for utterance anonymous0603-20101211-mgx-a0460 avg. like is -35.1216 over 373 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2900 utterances; for utterance anonymous0608-20101222-tsc-a0172 avg. like is -36.9124 over 511 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 2950 utterances; for utterance anonymous0613-20110105-pfl-rb-35 avg. like is -35.3756 over 498 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3000 utterances; for utterance anonymous0619-20110116-uab-b0184 avg. like is -41.0171 over 561 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3050 utterances; for utterance anonymous0624-20110129-ies-b0050 avg. like is -41.6851 over 436 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3100 utterances; for utterance anonymous0629-20110209-xtb-b0024 avg. like is -41.1002 over 361 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3150 utterances; for utterance anonymous0634-20110215-eqq-a0338 avg. like is -42.756 over 448 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3200 utterances; for utterance anonymous0639-20110219-syz-b0437 avg. like is -36.6201 over 523 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3250 utterances; for utterance anonymous0644-20110224-dxs-a0241 avg. like is -39.2522 over 386 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3300 utterances; for utterance anonymous0649-20110310-gxc-a0587 avg. like is -34.1456 over 461 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3350 utterances; for utterance anonymous0654-20110314-wdi-rb-36 avg. like is -49.5505 over 836 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3400 utterances; for utterance anonymous0659-20110323-qed-a0193 avg. like is -35.3187 over 298 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3450 utterances; for utterance anonymous0664-20110331-ons-a0156 avg. like is -35.0561 over 486 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance anonymous0666-20110406-nbk-b0405 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3500 utterances; for utterance anonymous0670-20110406-uwi-b0066 avg. like is -40.7775 over 398 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3550 utterances; for utterance anonymous0675-20110413-mnn-ar-08 avg. like is -41.4787 over 648 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3600 utterances; for utterance anonymous0680-20110429-oog-b0147 avg. like is -36.0797 over 436 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3650 utterances; for utterance anonymous0685-20110503-yro-a0030 avg. like is -30.4413 over 473 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3700 utterances; for utterance anonymous0690-20110520-mbm-a0264 avg. like is -35.4706 over 611 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance anonymous0693-20110605-ocx-a0408 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3750 utterances; for utterance anonymous0695-20110614-fee-b0490 avg. like is -33.1881 over 623 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3800 utterances; for utterance anonymous0700-20110709-hjc-b0440 avg. like is -35.9053 over 586 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance anonymous0705-20110802-dgv-b0159 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3850 utterances; for utterance anonymous0705-20110802-dgv-b0164 avg. like is -39.2468 over 411 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3900 utterances; for utterance anonymous0710-20110815-sgs-rb-10 avg. like is -31.6587 over 561 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 3950 utterances; for utterance anonymous0715-20110826-qjl-a0522 avg. like is -33.9332 over 561 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4000 utterances; for utterance anonymous0721-20110907-cgh-a0540 avg. like is -40.334 over 498 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance anonymous0724-20110914-cym-a0590 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4050 utterances; for utterance anonymous0726-20110917-ikt-a0563 avg. like is -34.5926 over 461 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4100 utterances; for utterance anonymous0731-20110926-axo-b0513 avg. like is -42.9308 over 698 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4150 utterances; for utterance anonymous0736-20110927-cqd-a0319 avg. like is -32.6273 over 661 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4200 utterances; for utterance anonymous0741-20111006-jpt-a0028 avg. like is -37.1885 over 473 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4250 utterances; for utterance anonymous0746-20111012-gud-b0370 avg. like is -33.2385 over 511 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4300 utterances; for utterance anonymous0751-20111015-spi-b0441 avg. like is -32.9942 over 573 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4350 utterances; for utterance anonymous0756-20111016-vzt-b0119 avg. like is -33.1634 over 486 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4400 utterances; for utterance anonymous0761-20111028-bgn-a0120 avg. like is -32.6337 over 648 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4450 utterances; for utterance anonymous0767-20111029-ihf-b0044 avg. like is -26.2771 over 511 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4500 utterances; for utterance anonymous0772-20111029-rer-a0403 avg. like is -30.4058 over 648 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4550 utterances; for utterance anonymous0777-20111030-fki-a0548 avg. like is -32.9264 over 611 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4600 utterances; for utterance anonymous0782-20111102-hjx-b0428 avg. like is -46.86 over 623 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4650 utterances; for utterance anonymous0788-20111106-crv-a0064 avg. like is -43.0301 over 461 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4700 utterances; for utterance anonymous0793-20111109-foc-a0318 avg. like is -40.7066 over 461 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4750 utterances; for utterance anonymous0798-20111115-uzp-a0559 avg. like is -33.6844 over 584 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance anonymous0802-20111128-lhl-a0266 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4800 utterances; for utterance anonymous0803-20111129-eys-a0051 avg. like is -43.8005 over 598 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4850 utterances; for utterance anonymous0808-20111207-qbi-a0451 avg. like is -40.5612 over 399 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4900 utterances; for utterance anonymous0813-20111219-uli-b0514 avg. like is -48.4505 over 436 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 4950 utterances; for utterance anonymous0818-20111230-pwa-a0183 avg. like is -33.98 over 398 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5000 utterances; for utterance anonymous0823-20120108-pso-b0150 avg. like is -38.893 over 448 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5050 utterances; for utterance anonymous0828-20120117-wqo-a0448 avg. like is -36.5983 over 463 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5100 utterances; for utterance anonymous0833-20120119-xpz-a0484 avg. like is -30.8151 over 298 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5150 utterances; for utterance anonymous0838-20120207-lin-a0120 avg. like is -46.5842 over 598 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5200 utterances; for utterance anonymous0843-20120219-aph-a0418 avg. like is -36.7069 over 486 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5250 utterances; for utterance anonymous0849-20120226-pbn-a0575 avg. like is -33.1308 over 826 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5300 utterances; for utterance anonymous0854-20120302-psz-a0077 avg. like is -33.7233 over 402 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5350 utterances; for utterance anonymous0859-20120312-ksx-b0274 avg. like is -40.853 over 361 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5400 utterances; for utterance anonymous0864-20120324-poc-b0263 avg. like is -42.2225 over 610 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5450 utterances; for utterance anonymous0869-20120326-yiz-ar-04 avg. like is -40.341 over 661 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5500 utterances; for utterance anonymous0874-20120410-thd-b0064 avg. like is -36.5313 over 598 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5550 utterances; for utterance anonymous0879-20120416-ydz-b0463 avg. like is -34.9476 over 498 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5600 utterances; for utterance anonymous0884-20120423-liq-b0502 avg. like is -40.7742 over 548 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5650 utterances; for utterance anonymous0889-20120430-nio-a0209 avg. like is -36.5317 over 536 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5700 utterances; for utterance anonymous0895-20120508-gjp-b0538 avg. like is -36.9366 over 536 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5750 utterances; for utterance anonymous0900-20120518-vwq-b0042 avg. like is -34.991 over 536 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5800 utterances; for utterance anonymous0905-20120602-nvp-a0372 avg. like is -33.5359 over 586 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5850 utterances; for utterance anonymous0910-20120607-rmv-a0230 avg. like is -27.2441 over 511 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5900 utterances; for utterance anonymous0916-20120615-een-a0494 avg. like is -35.034 over 473 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 5950 utterances; for utterance anonymous0921-20120623-zyi-b0123 avg. like is -37.6603 over 636 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6000 utterances; for utterance anonymous0926-20120704-odg-b0192 avg. like is -38.3331 over 598 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6050 utterances; for utterance anonymous0931-20120710-pqo-ar-17 avg. like is -35.5124 over 673 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6100 utterances; for utterance anonymous0936-20120728-rxs-b0269 avg. like is -38.48 over 548 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6150 utterances; for utterance anonymous0941-20120805-twm-a0385 avg. like is -31.7714 over 386 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6200 utterances; for utterance anonymous0946-20120906-kow-b0025 avg. like is -34.1656 over 361 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6250 utterances; for utterance anonymous0951-20120922-dsx-a0234 avg. like is -38.3672 over 573 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6300 utterances; for utterance anonymous0956-20120926-sox-a0358 avg. like is -35.1652 over 798 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6350 utterances; for utterance anonymous0961-20121010-cxw-a0224 avg. like is -31.8881 over 636 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6400 utterances; for utterance anonymous0966-20121015-bum-b0276 avg. like is -33.0731 over 511 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6450 utterances; for utterance anonymous0971-20121018-ycw-b0268 avg. like is -29.7808 over 498 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6500 utterances; for utterance anonymous0976-20121023-gok-a0577 avg. like is -38.4167 over 848 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6550 utterances; for utterance anonymous0981-20121026-gma-a0219 avg. like is -40.4309 over 623 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6600 utterances; for utterance anonymous0986-20121110-hcr-b0063 avg. like is -37.8454 over 636 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6650 utterances; for utterance anonymous0992-20121113-miv-a0169 avg. like is -31.9531 over 548 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6700 utterances; for utterance anonymous0997-20121118-aqi-a0453 avg. like is -45.1481 over 336 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6750 utterances; for utterance anonymous1002-20121128-lxx-rb-37 avg. like is -43.4008 over 836 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6800 utterances; for utterance anonymous1007-20121210-eqe-b0104 avg. like is -37.8445 over 648 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6850 utterances; for utterance anonymous1013-20121230-ksv-b0186 avg. like is -39.9654 over 736 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6900 utterances; for utterance anonymous1018-20130106-stv-a0050 avg. like is -35.6772 over 836 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 6950 utterances; for utterance anonymous1024-20130131-wxu-a0487 avg. like is -37.3413 over 973 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7000 utterances; for utterance anonymous1029-20130224-nwg-a0249 avg. like is -42.0847 over 786 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7050 utterances; for utterance anonymous1034-20130409-hrd-b0059 avg. like is -44.7424 over 673 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7100 utterances; for utterance anonymous1039-20130426-tqu-a0007 avg. like is -36.6132 over 586 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7150 utterances; for utterance anonymous1044-20130512-vxo-a0583 avg. like is -32.8963 over 761 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7200 utterances; for utterance anonymous1049-20130524-boy-rb-23 avg. like is -38.0687 over 817 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7250 utterances; for utterance anonymous1054-20130527-qpa-a0174 avg. like is -31.5815 over 461 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7300 utterances; for utterance anonymous1059-20130609-avg-b0367 avg. like is -38.8635 over 711 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7350 utterances; for utterance anonymous1064-20130623-htg-a0237 avg. like is -38.306 over 498 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7400 utterances; for utterance anonymous1069-20130703-jzv-a0343 avg. like is -36.4642 over 548 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7450 utterances; for utterance anonymous1074-20130717-kqk-a0140 avg. like is -34.1145 over 498 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7500 utterances; for utterance anonymous1079-20130812-cjv-rb-12 avg. like is -33.012 over 811 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7550 utterances; for utterance anonymous1084-20130824-lpn-b0206 avg. like is -37.4105 over 623 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7600 utterances; for utterance anonymous1089-20130908-vub-b0374 avg. like is -37.842 over 573 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7650 utterances; for utterance anonymous1094-20130925-cex-rp-03 avg. like is -40.5566 over 623 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7700 utterances; for utterance anonymous1099-20131028-wev-b0307 avg. like is -46.5529 over 661 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7750 utterances; for utterance anonymous1104-20131114-wai-a0413 avg. like is -32.0361 over 498 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7800 utterances; for utterance anonymous1109-20131204-bil-b0031 avg. like is -38.5106 over 623 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7850 utterances; for utterance anonymous1114-20131218-tdo-rp-22 avg. like is -38.5636 over 511 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7900 utterances; for utterance anonymous1120-20140102-qou-a0464 avg. like is -40.3788 over 673 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 7950 utterances; for utterance anonymous1125-20140108-eyp-b0105 avg. like is -37.6771 over 486 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8000 utterances; for utterance anonymous1130-20140127-uqs-b0329 avg. like is -38.634 over 511 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8050 utterances; for utterance anonymous1135-20140308-joi-b0075 avg. like is -41.3424 over 548 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8100 utterances; for utterance anonymous1140-20140402-xkc-a0303 avg. like is -33.3086 over 748 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8150 utterances; for utterance anonymous1146-20140513-hdn-a0308 avg. like is -36.189 over 579 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8200 utterances; for utterance anonymous1151-20140523-iqs-b0530 avg. like is -40.5922 over 486 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8250 utterances; for utterance anonymous1156-20140601-rup-a0435 avg. like is -33.7111 over 573 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8300 utterances; for utterance anonymous1161-20140729-bnk-a0205 avg. like is -31.9576 over 348 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8350 utterances; for utterance anonymous1166-20140729-yrm-a0577 avg. like is -39.0718 over 636 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8400 utterances; for utterance anonymous1171-20141005-zhl-rb-26 avg. like is -36.4621 over 648 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8450 utterances; for utterance anonymous1176-20141029-pyl-a0325 avg. like is -28.8166 over 548 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8500 utterances; for utterance anonymous1181-20141215-bme-b0020 avg. like is -38.438 over 598 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8550 utterances; for utterance anonymous1187-20150128-elb-a0260 avg. like is -37.1438 over 498 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8600 utterances; for utterance anonymous1192-20150303-mil-a0032 avg. like is -36.3789 over 673 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance anonymous1196-20150417-qko-a0543 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8650 utterances; for utterance anonymous1198-20150503-rwy-rp-29 avg. like is -41.7294 over 611 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8700 utterances; for utterance anonymous1203-20150529-bpd-a0272 avg. like is -47.0602 over 423 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8750 utterances; for utterance anonymous1208-20150824-pcq-a0183 avg. like is -36.9188 over 473 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8800 utterances; for utterance anonymous1214-20160104-ert-b0281 avg. like is -35.865 over 611 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8850 utterances; for utterance anonymous1219-20160802-blo-e0178 avg. like is -38.0499 over 786 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8900 utterances; for utterance anonymous1224-20170610-mua-en-1167 avg. like is -32.0351 over 411 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 8950 utterances; for utterance anonymous1229-25561208-ayf-b0288 avg. like is -37.6246 over 448 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9000 utterances; for utterance apdsqueaky-20151112-nij-b0209 avg. like is -39.6635 over 486 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9050 utterances; for utterance arthur-20130509-yjj-rp-30 avg. like is -33.8062 over 798 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9100 utterances; for utterance asip42-20170122-zhi-rp-19 avg. like is -35.1728 over 336 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9150 utterances; for utterance atterer-01202007-a-rp-09 avg. like is -36.7448 over 643 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9200 utterances; for utterance atterer-01202007-b-vf21-28 avg. like is -39.9936 over 453 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9250 utterances; for utterance atterer-02052007-vf5-vf5-38 avg. like is -39.3621 over 385 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9300 utterances; for utterance audioodyssey-20081109-rew-a0432 avg. like is -34.782 over 348 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9350 utterances; for utterance axllaruse-20140112-ced-a0499 avg. like is -37.6754 over 523 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance azmisov-20140428-hgh-b0358 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9400 utterances; for utterance azmisov-20140428-ovn-a0433 avg. like is -34.9155 over 561 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9450 utterances; for utterance azmisov-20140428-xml-b0267 avg. like is -34.3226 over 436 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9500 utterances; for utterance bebe-20100419-gpw-b0093 avg. like is -29.4915 over 323 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9550 utterances; for utterance becz03-20121205-ixj-a0180 avg. like is -32.9729 over 498 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9600 utterances; for utterance ben-20090326-cpr-b0145 avg. like is -35.8371 over 484 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9650 utterances; for utterance bendra-20141108-xnz-a0427 avg. like is -46.5765 over 561 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9700 utterances; for utterance benkay-20090111-cc-cc-26 avg. like is -39.9 over 513 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9750 utterances; for utterance bennmann-20091102-apc-a0204 avg. like is -36.4834 over 436 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9800 utterances; for utterance bhart-20100106-djk-a0007 avg. like is -30.6787 over 523 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance bhart-20100106-ldp-rb-37 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9850 utterances; for utterance bhart-20100106-lpu-b0258 avg. like is -28.2986 over 461 frames.
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance bhart-20100106-qqz-b0007 (or wrong size)
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9900 utterances; for utterance bhart-20100106-rfx-a0413 avg. like is -25.0867 over 398 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:194) Processed 9950 utterances; for utterance bhart-20100108-uhg-b0387 avg. like is -33.7376 over 398 frames.
+LOG (ali-to-post:main():ali-to-post.cc:65) Converted 9985 alignments.
+LOG (apply-cmvn:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 10002 utterances, errors on 0
+WARNING (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:145) No posterior info available for utterance bigmbywater-20100821-wsn-a0279 (or wrong size)
+LOG (transform-feats:main():transform-feats.cc:158) Overall average [pseudo-]logdet is -95.361 over 5.34421e+06 frames.
+LOG (transform-feats:main():transform-feats.cc:161) Applied transform to 10002 utterances; 0 had errors.
+LOG (transform-feats:main():transform-feats.cc:158) Overall average logdet is 4.0586 over 5.34421e+06 frames.
+LOG (transform-feats:main():transform-feats.cc:161) Applied transform to 10002 utterances; 0 had errors.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:203) Overall like per frame (Gaussian only) = -36.9451 over 5.33547e+06 frames.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:206) Done 9985 files, 17 with errors.
+LOG (sgmm2-acc-stats:main():sgmm2-acc-stats.cc:215) Written accs.
+# Accounting: time=515 threads=1
+# Ended (code 0) at Sun Nov 26 11:29:25 IST 2017, elapsed time 515 seconds
