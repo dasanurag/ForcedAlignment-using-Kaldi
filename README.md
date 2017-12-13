@@ -1,2 +1,2 @@
 # ForcedAlignment-using-Kaldi
-Forced Alignment using model trained on freely available Voxforge data
+Command line utility to do forced alignment using freely available Voxforge data in [Kaldi](http://kaldi-asr.org/).
